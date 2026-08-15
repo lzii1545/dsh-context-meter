@@ -485,7 +485,7 @@ window.__ModuleLoader__.load({
 				init: () => ({
 					enabled: true
 				}),
-				persist: "ui-sidebar.island-settings",
+				persist: "dsh-context-console.island-settings",
 				actions: {
 					setEnabled: (draft, enabled) => {
 						draft.enabled = enabled === true;
