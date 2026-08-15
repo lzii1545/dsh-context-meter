@@ -1,4 +1,4 @@
-# 一键卸载 dsh-context-console 插件
+﻿# 一键卸载 dsh-context-console 插件
 # 用法：.\uninstall.ps1 [-RemovePlugin]
 param([switch]$RemovePlugin)
 $ErrorActionPreference = 'Stop'
@@ -7,6 +7,18 @@ $dshHome = if ($env:DSH_HOME) { $env:DSH_HOME } else { Join-Path $env:USERPROFIL
 $pluginDir = Join-Path $dshHome 'plugins\dsh-context-console'
 $link = Join-Path $dshHome 'profiles\node_modules\dsh-context-console'
 $patchFile = Join-Path $dshHome 'profiles\web\cordis.patch.yml'
+
+# 0) 若通过官方 dsh plugin add 安装（package.json 的 dsh.profile.bundles），引导走官方卸载
+$profileManifest = Join-Path $dshHome 'profiles\web\package.json'
+if (Test-Path $profileManifest) {
+    $manifest = Get-Content $profileManifest -Raw | ConvertFrom-Json
+    if ($manifest.dsh.profile.bundles -contains 'dsh-context-console') {
+        Write-Host '该插件是通过官方 dsh plugin add 安装的（已在 dsh.profile.bundles 注册）。'
+        Write-Host '请用官方命令卸载：dsh plugin --profile web remove dsh-context-console'
+        Write-Host '（本脚本只处理手动安装路径，为避免误删 pnpm 安装的包已跳过）'
+        exit 0
+    }
+}
 
 # 1) 从组合文件移除本插件的 insert 块
 if (Test-Path $patchFile) {

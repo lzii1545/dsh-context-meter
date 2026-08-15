@@ -1,4 +1,4 @@
-# 一键安装 dsh-context-console 插件
+﻿# 一键安装 dsh-context-console 插件
 # 用法：.\install.ps1
 $ErrorActionPreference = 'Stop'
 
@@ -9,6 +9,14 @@ $patchFile = Join-Path $dshHome 'profiles\web\cordis.patch.yml'
 
 if (-not (Test-Path $nodeModules)) { Write-Error "找不到 profile 的 node_modules：$nodeModules（请先用 dsh 启动过一次 web profile）"; exit 1 }
 if (-not (Test-Path $patchFile)) { Write-Error "找不到组合补丁文件：$patchFile"; exit 1 }
+
+# 0) 检测官方 dsh plugin add 注册（package.json 的 dsh.profile.bundles 层），避免重复注册
+$profileManifest = Join-Path $dshHome 'profiles\web\package.json'
+$bundleRegistered = $false
+if (Test-Path $profileManifest) {
+    $manifest = Get-Content $profileManifest -Raw | ConvertFrom-Json
+    $bundleRegistered = $manifest.dsh.profile.bundles -contains 'dsh-context-console'
+}
 
 # 1) 复制插件
 New-Item -ItemType Directory -Force -Path $pluginDir | Out-Null
@@ -26,7 +34,9 @@ if (Test-Path $link) {
 
 # 3) 组合注册（幂等，写入前备份）
 $patch = Get-Content $patchFile -Raw
-if ($patch -match 'name:\s*dsh-context-console') {
+if ($bundleRegistered) {
+    Write-Host '已通过官方 dsh plugin add 注册（dsh.profile.bundles），跳过手动组合注册'
+} elseif ($patch -match 'name:\s*dsh-context-console') {
     Write-Host '组合文件已包含本插件，跳过注册'
 } else {
     Copy-Item $patchFile "$patchFile.bak-$(Get-Date -Format 'yyyyMMdd-HHmmss')" -Force

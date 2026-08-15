@@ -26,6 +26,19 @@
 
 3. **重启 DSH**，然后刷新浏览器页面，完成
 
+## 官方命令安装（推荐，需 pnpm）
+
+插件已声明 `dsh.bundle`，可直接用 Harness 官方插件命令安装：
+
+```powershell
+dsh plugin --profile web add file:<本仓库 plugin 目录的绝对路径>
+```
+
+- 需要 PATH 里有 pnpm；命令在 `~/.dsh/profiles/web` 里执行 `pnpm add`，并自动把插件的 bundle 层加入 `dsh.profile.bundles`
+- 装好后**无需手动编辑 cordis.patch.yml**；重启 DSH 生效
+- 卸载：`dsh plugin --profile web remove dsh-context-console`
+- 两种安装方式任选其一；`install.ps1` 检测到官方注册时会自动跳过手动注册，不会重复
+
 ## 手动安装（不想用脚本）
 
 1. 把 `plugin/` 整个目录复制到 `~/.dsh/plugins/dsh-context-console/`

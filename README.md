@@ -22,7 +22,7 @@ DeepSeek Harness Web 界面的浏览器插件，包含两个功能模块：
 - **停留策略** — 审批类常驻，点击跳转会话；普通通知自动收回；隐藏期间保持展开
 - **设置页** — 「设置 → 灵动岛」：总开关（本地持久化）、桌面通知授权、测试弹窗
 
-> 安装与使用方法见 [INSTALL.md](INSTALL.md)。Windows 下一条命令：`.\install.ps1`，然后重启 DSH。
+> 安装与使用方法见 [INSTALL.md](INSTALL.md)。Windows 下一条命令：`.\install.ps1`，然后重启 DSH；或走官方命令 `dsh plugin --profile web add file:<plugin 目录>`（需 pnpm）。
 
 ## 文件说明
 
@@ -36,7 +36,7 @@ DeepSeek Harness Web 界面的浏览器插件，包含两个功能模块：
 ## 工作原理
 
 - 插件目录 `~/.dsh/plugins/dsh-context-console` — 位于用户目录，升级免疫
-- 通过 junction 链入 profile 的 node_modules，并在 `~/.dsh/profiles/web/cordis.patch.yml` 注册一行
+- 通过 junction 链入 profile 的 node_modules，并在 `~/.dsh/profiles/web/cordis.patch.yml` 注册一行；插件已声明 `dsh.bundle`，也可直接用官方 `dsh plugin add` 安装（自动注册 bundle 层，无需手动改配置）
 - 启动时 client-modules 扫描到插件，将 bundle 注入浏览器；客户端注册三个官方插槽：
   - `sidebar.footer.action` — 仪表盘（Cordis 按钮下方）
   - `shell.overlay` — 灵动岛

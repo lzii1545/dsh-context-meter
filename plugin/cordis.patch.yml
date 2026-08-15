@@ -1,0 +1,7 @@
+# dsh-context-console bundle patch: register the console plugin row into the
+# web profile composition. Declared via `dsh.bundle.patch` in package.json,
+# so `dsh plugin --profile web add <spec>` joins this patch to the profile
+# layer stack automatically (no manual cordis.patch.yml edit needed).
+- insert:
+    - id: ui-console
+      name: dsh-context-console
