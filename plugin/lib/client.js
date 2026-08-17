@@ -102,6 +102,38 @@ window.__ModuleLoader__.load({
 			"status": "iset-status"
 		};
 		//#endregion
+		//#region \0dsh-css:/home/runner/work/deepseek-harness/deepseek-harness/packages/client/ui-console/src/client/PlanBoard.module.css.mjs
+		const planBoardCss = ".cpl-root{width:100%;display:flex;justify-content:center;padding:0 var(--dsh-composer-side-clearance);margin-bottom:15px}.cpl-card{box-sizing:border-box;position:relative;width:max-content;max-width:var(--dsh-chat-content-width);border-radius:999px;background:color-mix(in srgb,var(--dsw-alias-bg-layer-1) 66%,transparent);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 70%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 2px 10px -2px rgba(0,0,0,.08);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%)}.cpl-pill{display:flex;align-items:center;gap:6px;padding:5px 8px 5px 10px;min-height:28px;cursor:pointer;border-radius:999px;transition:background .15s ease}.cpl-pill:hover{background:color-mix(in srgb,var(--dsw-alias-label-primary) 6%,transparent)}.cpl-icon{flex:none;width:14px;height:14px;color:var(--dsw-alias-label-secondary);display:grid;place-items:center}.cpl-title{flex:none;font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary)}.cpl-sep{flex:none;width:1px;height:10px;background:color-mix(in srgb,var(--dsw-alias-label-secondary) 25%,transparent)}.cpl-dot{flex:none;width:6px;height:6px;border-radius:50%;background:#30D158;animation:cpl-pulse 1.6s ease-in-out infinite}.cpl-current{font-size:12px;line-height:16px;color:var(--dsw-alias-label-primary);min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cpl-count{flex:none;font-size:11px;line-height:15px;padding:0 6px;border-radius:999px;background:color-mix(in srgb,var(--dsw-alias-label-primary) 8%,transparent);color:var(--dsw-alias-label-secondary);font-variant-numeric:tabular-nums}.cpl-body{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);box-sizing:border-box;width:max-content;min-width:300px;max-width:min(380px,calc(100vw - 40px));border-radius:18px;padding:10px 12px 8px;background:color-mix(in srgb,var(--dsw-alias-bg-overlay) 92%,transparent);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 70%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 2px 6px rgba(0,0,0,.06),0 16px 40px -10px rgba(0,0,0,.28);backdrop-filter:blur(28px) saturate(190%);-webkit-backdrop-filter:blur(28px) saturate(190%);max-height:0;overflow:hidden;opacity:0;transition:max-height .28s cubic-bezier(.22,1,.36,1),opacity .18s ease}.cpl-root[data-open=true] .cpl-body{max-height:300px;opacity:1;overflow-y:auto;scrollbar-width:thin}.cpl-body::-webkit-scrollbar{width:5px}.cpl-body::-webkit-scrollbar-thumb{background:var(--dsw-alias-scrollbar-bg-l2,rgba(120,120,128,.4));border-radius:999px}.cpl-body::-webkit-scrollbar-track{background:transparent}.cpl-body:after{content:\"\";position:absolute;left:0;right:0;top:100%;height:8px}.cpl-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 2px 6px}.cpl-head-title{font-size:11px;line-height:16px;font-weight:600;letter-spacing:.02em;color:var(--dsw-alias-label-secondary)}.cpl-head-count{font-size:11px;line-height:16px;color:var(--dsw-alias-label-secondary);font-variant-numeric:tabular-nums}.cpl-bar{height:3px;margin:0 2px 6px;border-radius:999px;background:color-mix(in srgb,var(--dsw-alias-label-primary) 7%,transparent);overflow:hidden}.cpl-bar-fill{height:100%;border-radius:999px;background:#30D158;transition:width .3s cubic-bezier(.22,1,.36,1)}.cpl-list{list-style:none;margin:0;padding:0 2px;display:flex;flex-direction:column}.cpl-item{display:flex;align-items:flex-start;gap:8px;font-size:12px;line-height:18px;padding:4px 6px;border-radius:8px;transition:background .15s ease}.cpl-item:hover{background:color-mix(in srgb,var(--dsw-alias-label-primary) 5%,transparent)}.cpl-content{min-width:0}.cpl-item[data-status=completed]{color:var(--dsw-alias-label-secondary)}.cpl-item[data-status=completed] .cpl-content{text-decoration:line-through;opacity:.7}.cpl-item[data-status=pending]{color:var(--dsw-alias-label-secondary)}.cpl-item[data-status=in_progress]{font-weight:600}.cpl-glyph{flex:none;width:16px;height:16px;margin-top:1px;display:grid;place-items:center}.cpl-glyph-dot{animation:cpl-pulse 1.4s ease-in-out infinite;transform-origin:8px 8px}@keyframes cpl-pulse{0%,100%{opacity:.4;transform:scale(.8)}50%{opacity:1;transform:scale(1.1)}}";
+		const planBoardTagId = "dsh-context-console/PlanBoard.module.css";
+		if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(planBoardTagId) + "]") === null) {
+			const tag = document.createElement("style");
+			tag.dataset.plugin = "dsh-context-console";
+			tag.dataset.pluginCss = planBoardTagId;
+			tag.textContent = planBoardCss;
+			document.head.appendChild(tag);
+		}
+		var PlanBoard_module_css_default = {
+			"root": "cpl-root",
+			"card": "cpl-card",
+			"pill": "cpl-pill",
+			"title": "cpl-title",
+			"dot": "cpl-dot",
+			"current": "cpl-current",
+			"count": "cpl-count",
+			"body": "cpl-body",
+			"bar": "cpl-bar",
+			"barFill": "cpl-bar-fill",
+			"list": "cpl-list",
+			"item": "cpl-item",
+			"content": "cpl-content",
+			"glyph": "cpl-glyph",
+			"icon": "cpl-icon",
+			"sep": "cpl-sep",
+			"head": "cpl-head",
+			"headTitle": "cpl-head-title",
+			"headCount": "cpl-head-count"
+		};
+		//#endregion
 		//#region lib/types/client/ContextMeter.js
 		/** Sidebar-foot context-occupancy and cache-hit meter rendered in the
 		* sidebar foot (`sidebar.footer.action`): two progress bars fed by the
@@ -786,6 +818,173 @@ window.__ModuleLoader__.load({
 			});
 		}
 		//#endregion
+		//#region lib/types/client/PlanBoard.js
+		/** Status glyph: filled green check (done), pulsing green ring (running), hollow ring (pending). */
+		function StepGlyph({ status }) {
+			if (status === "completed") {
+				return (0, react_jsx_runtime.jsxs)("svg", {
+					viewBox: "0 0 16 16",
+					width: "16",
+					height: "16",
+					"aria-hidden": true,
+					children: [(0, react_jsx_runtime.jsx)("circle", { cx: "8", cy: "8", r: "7", fill: "#30D158" }), (0, react_jsx_runtime.jsx)("path", {
+						d: "M5.2 8.3l1.9 1.9 3.7-4",
+						stroke: "#fff",
+						strokeWidth: "1.6",
+						fill: "none",
+						strokeLinecap: "round",
+						strokeLinejoin: "round"
+					})]
+				});
+			}
+			if (status === "in_progress") {
+				return (0, react_jsx_runtime.jsxs)("svg", {
+					viewBox: "0 0 16 16",
+					width: "16",
+					height: "16",
+					"aria-hidden": true,
+					children: [(0, react_jsx_runtime.jsx)("circle", {
+						cx: "8",
+						cy: "8",
+						r: "6",
+						stroke: "#30D158",
+						strokeWidth: "1.6",
+						fill: "none"
+					}), (0, react_jsx_runtime.jsx)("circle", {
+						className: "cpl-glyph-dot",
+						cx: "8",
+						cy: "8",
+						r: "3",
+						fill: "#30D158"
+					})]
+				});
+			}
+			return (0, react_jsx_runtime.jsx)("svg", {
+				viewBox: "0 0 16 16",
+				width: "16",
+				height: "16",
+				"aria-hidden": true,
+				children: (0, react_jsx_runtime.jsx)("circle", {
+					cx: "8",
+					cy: "8",
+					r: "6",
+					stroke: "var(--dsw-alias-border-l2)",
+					strokeWidth: "1.6",
+					fill: "none"
+				})
+			});
+		}
+		/** Codex-style plan board over the `todos` projection: the collapsed pill
+		* shows the step currently being executed plus progress; hovering expands
+		* the full step list (click pins it open), and a step change auto-opens
+		* briefly so the switch is visible. Renders nothing without a todo list. */
+		function PlanBoard({ useProjection, t }) {
+			const todos = useProjection("todos") ?? [];
+			const [pinned, setPinned] = (0, react.useState)(false);
+			const [hovered, setHovered] = (0, react.useState)(false);
+			const [autoOpen, setAutoOpen] = (0, react.useState)(false);
+			const lastCurrentRef = (0, react.useRef)(void 0);
+			const items = Array.isArray(todos) ? todos : [];
+			const current = items.find((item) => item.status === "in_progress");
+			const done = items.filter((item) => item.status === "completed").length;
+			const currentKey = current === void 0 ? "" : String(current.id ?? current.content);
+			(0, react.useEffect)(() => {
+				if (lastCurrentRef.current === void 0) {
+					lastCurrentRef.current = currentKey;
+					return;
+				}
+				if (lastCurrentRef.current === currentKey) return;
+				lastCurrentRef.current = currentKey;
+				setAutoOpen(true);
+				const timer = window.setTimeout(() => setAutoOpen(false), 2500);
+				return () => {
+					window.clearTimeout(timer);
+				};
+			}, [currentKey]);
+			if (items.length === 0) return null;
+			const open = pinned || hovered || autoOpen;
+			const pillText = current !== void 0 ? current.content : done >= items.length ? t("plan.done") : done + "/" + items.length;
+			return (0, react_jsx_runtime.jsxs)("div", {
+				className: PlanBoard_module_css_default.root,
+				"data-open": String(open),
+				children: [(0, react_jsx_runtime.jsxs)("div", {
+					className: PlanBoard_module_css_default.card,
+					onMouseEnter: () => {
+						setHovered(true);
+					},
+					onMouseLeave: () => {
+						setHovered(false);
+					},
+					children: [(0, react_jsx_runtime.jsxs)("div", {
+						className: PlanBoard_module_css_default.pill,
+						role: "button",
+						"aria-expanded": open,
+						onClick: () => {
+							setPinned(!pinned);
+						},
+						children: [(0, react_jsx_runtime.jsx)("span", {
+							className: PlanBoard_module_css_default.icon,
+							children: (0, react_jsx_runtime.jsxs)("svg", {
+								viewBox: "0 0 14 14",
+								width: "14",
+								height: "14",
+								"aria-hidden": true,
+								children: [(0, react_jsx_runtime.jsx)("rect", { x: "1", y: "2.2", width: "8", height: "1.7", rx: "0.85", fill: "currentColor" }), (0, react_jsx_runtime.jsx)("rect", { x: "1", y: "6.15", width: "8", height: "1.7", rx: "0.85", fill: "currentColor" }), (0, react_jsx_runtime.jsx)("rect", { x: "1", y: "10.1", width: "5.5", height: "1.7", rx: "0.85", fill: "currentColor" })]
+							})
+						}), (0, react_jsx_runtime.jsx)("span", {
+							className: PlanBoard_module_css_default.title,
+							children: t("plan.title")
+						}), (0, react_jsx_runtime.jsx)("span", {
+							className: PlanBoard_module_css_default.sep,
+							"aria-hidden": true
+						}), current !== void 0 ? (0, react_jsx_runtime.jsx)("span", {
+							className: PlanBoard_module_css_default.dot,
+							"aria-hidden": true
+						}) : null, (0, react_jsx_runtime.jsx)("span", {
+							className: PlanBoard_module_css_default.current,
+							children: pillText
+						}), (0, react_jsx_runtime.jsx)("span", {
+							className: PlanBoard_module_css_default.count,
+							children: done + "/" + items.length
+						})]
+					}), (0, react_jsx_runtime.jsxs)("div", {
+						className: PlanBoard_module_css_default.body,
+						children: [(0, react_jsx_runtime.jsxs)("div", {
+							className: PlanBoard_module_css_default.head,
+							children: [(0, react_jsx_runtime.jsx)("span", {
+								className: PlanBoard_module_css_default.headTitle,
+								children: t("plan.title")
+							}), (0, react_jsx_runtime.jsx)("span", {
+								className: PlanBoard_module_css_default.headCount,
+								children: done + "/" + items.length
+							})]
+						}), (0, react_jsx_runtime.jsx)("div", {
+							className: PlanBoard_module_css_default.bar,
+							children: (0, react_jsx_runtime.jsx)("div", {
+								className: PlanBoard_module_css_default.barFill,
+								style: { width: items.length > 0 ? done / items.length * 100 + "%" : "0%" }
+							})
+						}), (0, react_jsx_runtime.jsx)("ul", {
+							className: PlanBoard_module_css_default.list,
+							children: items.map((item) => (0, react_jsx_runtime.jsxs)("li", {
+								className: PlanBoard_module_css_default.item,
+								"data-status": item.status,
+								key: String(item.id ?? item.content),
+								children: [(0, react_jsx_runtime.jsx)("span", {
+									className: PlanBoard_module_css_default.glyph,
+									"aria-hidden": true,
+									children: (0, react_jsx_runtime.jsx)(StepGlyph, { status: item.status })
+								}), (0, react_jsx_runtime.jsx)("span", {
+									className: PlanBoard_module_css_default.content,
+									children: item.content
+								})]
+							}))
+						})]
+					})]
+				})]
+			});
+		}
+		//#endregion
 		//#region lib/types/client/locales.js
 		/** `sidebar` namespace dictionaries: shell controls (brand row, New Session, fold toggle). */
 		/** Simplified Chinese dictionary (the key-set source of truth). */
@@ -821,6 +1020,8 @@ window.__ModuleLoader__.load({
 			"meter.rank5": "散财童子",
 			"meter.rank6": "烧钱大师",
 			"meter.rank7": "财神下凡",
+			"plan.title": "计划",
+			"plan.done": "全部完成",
 			"island.done": "任务完成",
 			"island.approval": "需要审批",
 			"island.job": "后台任务完成",
@@ -874,6 +1075,8 @@ window.__ModuleLoader__.load({
 			"meter.rank5": "Money Scatterer",
 			"meter.rank6": "Cash Burner",
 			"meter.rank7": "God of Fortune",
+			"plan.title": "Plan",
+			"plan.done": "All done",
 			"island.done": "Task complete",
 			"island.approval": "Needs approval",
 			"island.job": "Background job finished",
@@ -939,6 +1142,13 @@ window.__ModuleLoader__.load({
 				locale: NS,
 				store: islandStore
 			}, IslandSettings)), "ui-console: island settings");
+			ctx.effect(() => ctx.slots.inject("conversation.input.dock", () => ctx.slots.register({
+				name: "conversation.input.dock",
+				id: "todo",
+				order: 30,
+				priority: -1,
+				locale: NS
+			}, PlanBoard)), "ui-console: plan board");
 		}
 		//#endregion
 		exports.apply = apply;

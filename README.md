@@ -27,6 +27,14 @@ DeepSeek Harness Web 界面的浏览器插件，包含两个功能模块：
 - **停留策略** — 审批类常驻，点击跳转会话；普通通知自动收回；隐藏期间保持展开
 - **设置页** — 「设置 → 灵动岛」：总开关（本地持久化）、暴击特效开关、桌面通知授权、测试弹窗
 
+### 计划面板
+
+输入框正上方的 Codex 式计划胶囊，数据来自当前会话的任务列表：
+
+- **收起态** — 显示当前执行步骤与进度徽章；任务结束自动消失，不跨轮持久
+- **悬停展开** — 亚克力胶囊浮框：状态图标（✓ 完成 / 呼吸点进行中 / 空心待办）+ 进度条 + 完整步骤
+- **交互** — 点击图钉固定展开；步骤切换自动展开 2.5 秒提示；悬停热区仅在胶囊上
+
 > 安装与使用方法见 [INSTALL.md](INSTALL.md)。Windows 下一条命令：`.\install.ps1`，然后重启 DSH；或走官方命令 `dsh plugin --profile web add file:<plugin 目录>`（需 pnpm）。
 
 ## 文件说明
@@ -42,10 +50,11 @@ DeepSeek Harness Web 界面的浏览器插件，包含两个功能模块：
 
 - 插件目录 `~/.dsh/plugins/dsh-context-console` — 位于用户目录，升级免疫
 - 通过 junction 链入 profile 的 node_modules，并在 `~/.dsh/profiles/web/cordis.patch.yml` 注册一行；插件已声明 `dsh.bundle`，也可直接用官方 `dsh plugin add` 安装（自动注册 bundle 层，无需手动改配置）
-- 启动时 client-modules 扫描到插件，将 bundle 注入浏览器；客户端注册三个官方插槽：
+- 启动时 client-modules 扫描到插件，将 bundle 注入浏览器；客户端注册四个官方插槽：
   - `sidebar.footer.action` — 仪表盘（Cordis 按钮下方）
   - `shell.overlay` — 灵动岛
   - `settings.section` — 设置页
+  - `conversation.input.dock` — 计划面板（运行时替换官方 todo 条，卸载即恢复）
 
 ## 注意事项
 
