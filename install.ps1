@@ -1,4 +1,4 @@
-﻿# 一键安装 dsh-context-console 插件
+# 一键安装 dsh-context-console 插件
 # 用法：.\install.ps1
 $ErrorActionPreference = 'Stop'
 
@@ -30,6 +30,15 @@ if (Test-Path $link) {
 } else {
     New-Item -ItemType Junction -Path $link -Target $pluginDir | Out-Null
     Write-Host "junction 已创建：$link"
+}
+
+# 2.5) 插件目录的 node_modules junction（宿主半需要解析 @deepseek-ai/dsh-llm 等依赖）
+$pluginsNodeModules = Join-Path $dshHome 'plugins\node_modules'
+if (Test-Path $pluginsNodeModules) {
+    Write-Host "plugins\node_modules junction 已存在"
+} else {
+    New-Item -ItemType Junction -Path $pluginsNodeModules -Target $nodeModules | Out-Null
+    Write-Host "plugins\node_modules junction 已创建"
 }
 
 # 3) 组合注册（幂等，写入前备份）

@@ -9,7 +9,7 @@ window.__ModuleLoader__.load({
 		let _deepseek_ai_dsh_client_ui_primitives = require("@deepseek-ai/dsh-client-ui-primitives");
 		let _deepseek_ai_dsh_client_runtime_client = require("@deepseek-ai/dsh-client-runtime/client");
 //#region \0dsh-css:/home/runner/work/deepseek-harness/deepseek-harness/packages/client/ui-sidebar/src/client/ContextMeter.module.css.mjs
-		const contextMeterCss = ".cxm-root{box-sizing:border-box;position:relative;flex:none;width:100%;min-width:0;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Text\",\"Segoe UI\",system-ui,sans-serif;letter-spacing:-.01em}.cxm-card{width:100%;margin:0;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-layer-2);background:color-mix(in srgb,var(--dsw-alias-bg-layer-1) 58%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 60%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 1px 2px rgba(0,0,0,.05),0 6px 20px -8px rgba(0,0,0,.12);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);display:flex;flex-direction:column;gap:7px;animation:cxm-in .3s cubic-bezier(.22,1,.36,1);transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s cubic-bezier(.22,1,.36,1)}.cxm-card:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 2px 4px rgba(0,0,0,.06),0 10px 28px -8px rgba(0,0,0,.16)}@keyframes cxm-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}.cxm-rail{margin-top:0;padding:0;display:grid;place-items:center;width:36px;height:36px;border-radius:50%}.cxm-rail:hover{background:var(--dsw-alias-interactive-bg-hover)}.cxm-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cxm-pct{flex:none;font-size:12px;line-height:16px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--dsw-alias-label-primary)}.cxm-pct-blue{color:#0A84FF}.cxm-pct-orange{color:#FF9F0A}.cxm-pct-red{color:#FF453A}.cxm-pct-green{color:#30D158}.cxm-track{flex:none;height:4px;border-radius:999px;background:var(--dsw-alias-interactive-bg-hover);background:color-mix(in srgb,var(--dsw-alias-label-primary) 8%,transparent);overflow:hidden;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}.cxm-fill{height:100%;border-radius:999px;transition:width .3s cubic-bezier(.22,1,.36,1)}.cxm-fill-blue{background-color:#0A84FF}.cxm-fill-orange{background-color:#FF9F0A}.cxm-fill-red{background-color:#FF453A}.cxm-fill-green{background-color:#30D158}.cxm-fill-blue,.cxm-fill-orange,.cxm-fill-red,.cxm-fill-green{background-image:linear-gradient(180deg,rgba(255,255,255,.32),rgba(255,255,255,0) 55%)}.cxm-tip{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px) scale(.98);z-index:60;box-sizing:border-box;width:236px;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-overlay);background:color-mix(in srgb,var(--dsw-alias-bg-overlay) 78%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 65%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 1px 2px rgba(0,0,0,.06),0 12px 32px -8px rgba(0,0,0,.22);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1),visibility 0s linear .16s}.cxm-card:hover>.cxm-tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0) scale(1);transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1)}.cxm-tip-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:3px 0;font-size:12px;line-height:17px}.cxm-tip-key{flex:none;color:var(--dsw-alias-label-secondary)}.cxm-tip-val{min-width:0;color:var(--dsw-alias-label-primary);font-variant-numeric:tabular-nums;text-align:right}.cxm-ring-track{fill:none;stroke:var(--dsw-alias-border-l1);stroke:color-mix(in srgb,var(--dsw-alias-label-primary) 12%,transparent);stroke-width:2.5}.cxm-ring-fill{fill:none;stroke-width:2.5;stroke-linecap:round}.cxm-ring-blue{stroke:#0A84FF}.cxm-ring-orange{stroke:#FF9F0A}.cxm-ring-red{stroke:#FF453A}.cxm-card:first-child{margin-top:8px}.cxm-card:not(:first-child){margin-left:-100%;margin-top:57px}.cxm-balance-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-balance-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);display:inline-flex;align-items:center;gap:4px}.cxm-balance-right{flex:none;display:inline-flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums}.cxm-balance-value{font-size:12px;line-height:16px;font-weight:600;color:var(--dsw-alias-label-primary);transition:color .25s ease}.cxm-balance-value.cxm-hit{color:#FF453A}.cxm-today{font-size:11px;line-height:16px;color:var(--dsw-alias-label-secondary)}.cxm-dmg{position:absolute;right:12px;top:4px;z-index:5;pointer-events:none;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;color:#FF453A;animation:cxm-dmg-rise 1.1s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-rise{0%{opacity:0;transform:translateY(2px) scale(.9)}18%{opacity:1}100%{opacity:0;transform:translateY(-20px) scale(1)}}.cxm-dmg-crit{font-size:16px;font-weight:700;color:#FF453A;text-shadow:0 1px 8px rgba(255,69,58,.55);animation:cxm-dmg-crit-rise 1.4s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-crit-rise{0%{opacity:0;transform:translateY(4px) scale(.7) rotate(-2deg)}16%{opacity:1;transform:scale(1.14)}32%{transform:scale(1)}100%{opacity:0;transform:translateY(-30px) scale(1)}}.cxm-combo{flex:none;font-size:11px;line-height:16px;font-weight:600;color:#FF9F0A;animation:cxm-combo-pop .3s cubic-bezier(.22,1,.36,1)}@keyframes cxm-combo-pop{0%{transform:scale(.7);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1)}}.cxm-rank{flex:none;font-size:11px;line-height:16px;font-weight:500}";
+		const contextMeterCss = ".cxm-root{box-sizing:border-box;position:relative;flex:none;width:100%;min-width:0;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Text\",\"Segoe UI\",system-ui,sans-serif;letter-spacing:-.01em}.cxm-card{width:100%;margin:0;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-layer-2);background:color-mix(in srgb,var(--dsw-alias-bg-layer-1) 58%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 60%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 1px 2px rgba(0,0,0,.05),0 6px 20px -8px rgba(0,0,0,.12);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);display:flex;flex-direction:column;gap:7px;animation:cxm-in .3s cubic-bezier(.22,1,.36,1);transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s cubic-bezier(.22,1,.36,1)}.cxm-card:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 2px 4px rgba(0,0,0,.06),0 10px 28px -8px rgba(0,0,0,.16)}@keyframes cxm-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}.cxm-rail{margin-top:0;padding:0;display:grid;place-items:center;width:36px;height:36px;border-radius:50%}.cxm-rail:hover{background:var(--dsw-alias-interactive-bg-hover)}.cxm-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cxm-pct{flex:none;font-size:12px;line-height:16px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--dsw-alias-label-primary)}.cxm-pct-blue{color:#0A84FF}.cxm-pct-orange{color:#FF9F0A}.cxm-pct-red{color:#FF453A}.cxm-pct-green{color:#30D158}.cxm-track{flex:none;height:4px;border-radius:999px;background:var(--dsw-alias-interactive-bg-hover);background:color-mix(in srgb,var(--dsw-alias-label-primary) 8%,transparent);overflow:hidden;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}.cxm-fill{height:100%;border-radius:999px;transition:width .3s cubic-bezier(.22,1,.36,1)}.cxm-fill-blue{background-color:#0A84FF}.cxm-fill-orange{background-color:#FF9F0A}.cxm-fill-red{background-color:#FF453A}.cxm-fill-green{background-color:#30D158}.cxm-fill-blue,.cxm-fill-orange,.cxm-fill-red,.cxm-fill-green{background-image:linear-gradient(180deg,rgba(255,255,255,.32),rgba(255,255,255,0) 55%)}.cxm-tip{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px) scale(.98);z-index:60;box-sizing:border-box;width:236px;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-overlay);background:color-mix(in srgb,var(--dsw-alias-bg-overlay) 78%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 65%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 1px 2px rgba(0,0,0,.06),0 12px 32px -8px rgba(0,0,0,.22);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1),visibility 0s linear .16s}.cxm-card:hover>.cxm-tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0) scale(1);transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1)}.cxm-tip-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:3px 0;font-size:12px;line-height:17px}.cxm-tip-key{flex:none;color:var(--dsw-alias-label-secondary)}.cxm-tip-val{min-width:0;color:var(--dsw-alias-label-primary);font-variant-numeric:tabular-nums;text-align:right}.cxm-ring-track{fill:none;stroke:var(--dsw-alias-border-l1);stroke:color-mix(in srgb,var(--dsw-alias-label-primary) 12%,transparent);stroke-width:2.5}.cxm-ring-fill{fill:none;stroke-width:2.5;stroke-linecap:round}.cxm-ring-blue{stroke:#0A84FF}.cxm-ring-orange{stroke:#FF9F0A}.cxm-ring-red{stroke:#FF453A}.cxm-card:first-child{margin-top:8px}.cxm-card:not(:first-child){margin-left:-100%;margin-top:57px}.cxm-balance-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-balance-left{display:inline-flex;align-items:center;gap:6px;min-width:0}.cxm-balance-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);display:inline-flex;align-items:center;gap:4px}.cxm-balance-right{flex:none;display:inline-flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums}.cxm-balance-value{font-size:12px;line-height:16px;font-weight:600;color:var(--dsw-alias-label-primary);transition:color .25s ease}.cxm-balance-value.cxm-hit{color:#FF453A}.cxm-today{font-size:11px;line-height:16px;color:var(--dsw-alias-label-secondary)}.cxm-dmg{position:absolute;right:12px;top:4px;z-index:5;pointer-events:none;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;color:#FF453A;animation:cxm-dmg-rise 1.1s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-rise{0%{opacity:0;transform:translateY(2px) scale(.9)}18%{opacity:1}100%{opacity:0;transform:translateY(-20px) scale(1)}}.cxm-dmg-crit{font-size:16px;font-weight:700;color:#FF453A;text-shadow:0 1px 8px rgba(255,69,58,.55);animation:cxm-dmg-crit-rise 1.4s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-crit-rise{0%{opacity:0;transform:translateY(4px) scale(.7) rotate(-2deg)}16%{opacity:1;transform:scale(1.14)}32%{transform:scale(1)}100%{opacity:0;transform:translateY(-30px) scale(1)}}.cxm-rank{flex:none;font-size:11px;line-height:16px;font-weight:500}";
 		const contextMeterTagId = "dsh-context-console/ContextMeter.module.css";
 		if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(contextMeterTagId) + "]") === null) {
 			const tag = document.createElement("style");
@@ -45,6 +45,7 @@ window.__ModuleLoader__.load({
 			"ringOrange": "cxm-ring-orange",
 			"ringRed": "cxm-ring-red",
 			"balanceRow": "cxm-balance-row",
+			"balanceLeft": "cxm-balance-left",
 			"balanceLabel": "cxm-balance-label",
 			"balanceRight": "cxm-balance-right",
 			"balanceValue": "cxm-balance-value",
@@ -52,7 +53,6 @@ window.__ModuleLoader__.load({
 			"today": "cxm-today",
 			"dmg": "cxm-dmg",
 			"dmgCrit": "cxm-dmg-crit",
-			"combo": "cxm-combo",
 			"rank": "cxm-rank"
 		};
 		//#endregion
@@ -132,6 +132,25 @@ window.__ModuleLoader__.load({
 			"head": "cpl-head",
 			"headTitle": "cpl-head-title",
 			"headCount": "cpl-head-count"
+		};
+		//#endregion
+		//#region \0dsh-css:/home/runner/work/deepseek-harness/deepseek-harness/packages/client/ui-console/src/client/ProfileSettings.module.css.mjs
+		const profileSettingsCss = ".iprf-desc{font-size:13px;line-height:20px;color:var(--dsw-alias-label-secondary);margin-bottom:10px}.iprf-area{box-sizing:border-box;width:100%;min-height:180px;resize:vertical;border-radius:12px;border:1px solid var(--dsw-alias-border-l1);background:color-mix(in srgb,var(--dsw-alias-bg-layer-2) 60%,transparent);color:var(--dsw-alias-label-primary);font-family:inherit;font-size:13px;line-height:20px;padding:10px 12px;outline:none}.iprf-area:focus{border-color:var(--dsw-alias-border-l2)}.iprf-foot{display:flex;align-items:center;gap:10px;margin-top:10px}.iprf-count{font-size:11px;color:var(--dsw-alias-label-secondary);font-variant-numeric:tabular-nums;margin-right:auto}.iprf-save{flex:none;height:28px;padding:0 16px;border-radius:999px;border:none;background:#0A84FF;color:#fff;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit}.iprf-save:hover{opacity:.85}.iprf-saved{flex:none;font-size:12px;color:#30D158}";
+		const profileSettingsTagId = "dsh-context-console/ProfileSettings.module.css";
+		if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(profileSettingsTagId) + "]") === null) {
+			const tag = document.createElement("style");
+			tag.dataset.plugin = "dsh-context-console";
+			tag.dataset.pluginCss = profileSettingsTagId;
+			tag.textContent = profileSettingsCss;
+			document.head.appendChild(tag);
+		}
+		var ProfileSettings_module_css_default = {
+			"desc": "iprf-desc",
+			"area": "iprf-area",
+			"foot": "iprf-foot",
+			"count": "iprf-count",
+			"save": "iprf-save",
+			"saved": "iprf-saved"
 		};
 		//#endregion
 		//#region lib/types/client/ContextMeter.js
@@ -227,20 +246,17 @@ window.__ModuleLoader__.load({
 		function loadBalanceState() {
 			try {
 				const raw = localStorage.getItem(BALANCE_STORE_KEY);
-				if (raw === null) return { balance: null, today: 0, date: "" };
+				if (raw === null) return { balance: null, spendToday: 0, spendTotal: 0, date: "" };
 				const parsed = JSON.parse(raw);
-				const parts = parsed.parts;
 				const num = (value) => typeof value === "number" && Number.isFinite(value) && value >= 0 ? value : 0;
 				return {
 					balance: typeof parsed.balance === "string" ? parsed.balance : null,
-					parts: parts !== null && typeof parts === "object" ? { miss: num(parts.miss), hit: num(parts.hit), output: num(parts.output) } : { miss: 0, hit: 0, output: 0 },
-					combo: num(parsed.combo),
-					best: num(parsed.best),
-					total: num(parsed.total),
+					spendToday: num(parsed.spendToday),
+					spendTotal: num(parsed.spendTotal),
 					date: typeof parsed.date === "string" ? parsed.date : ""
 				};
 			} catch (error) {
-				return { balance: null, parts: { miss: 0, hit: 0, output: 0 }, combo: 0, best: 0, total: 0, date: "" };
+				return { balance: null, spendToday: 0, spendTotal: 0, date: "" };
 			}
 		}
 		/** Read one projection leaf off the current session's list row. */
@@ -261,44 +277,50 @@ window.__ModuleLoader__.load({
 			const [balanceFresh, setBalanceFresh] = (0, react.useState)(false);
 			const [hitFlash, setHitFlash] = (0, react.useState)(false);
 			const [dmgList, setDmgList] = (0, react.useState)([]);
-			const [todayParts, setTodayParts] = (0, react.useState)(initialBalance.date === todayKey() ? initialBalance.parts : { miss: 0, hit: 0, output: 0 });
-			const [combo, setCombo] = (0, react.useState)(initialBalance.date === todayKey() ? initialBalance.combo : 0);
-			const [bestCombo, setBestCombo] = (0, react.useState)(initialBalance.best);
-			const [totalSpend, setTotalSpend] = (0, react.useState)(initialBalance.total);
-			const todayCost = todayParts.miss + todayParts.hit + todayParts.output;
-			const rank = rankOf(totalSpend);
+			const [spendToday, setSpendToday] = (0, react.useState)(initialBalance.date === todayKey() ? initialBalance.spendToday : 0);
+			const [spendTotal, setSpendTotal] = (0, react.useState)(initialBalance.spendTotal);
+			const rank = rankOf(spendTotal);
 			const prevUsageRef = (0, react.useRef)(void 0);
 			const dmgSeqRef = (0, react.useRef)(0);
+			const refreshRef = (0, react.useRef)(void 0);
 			/** Balance polling: the host half serves /console-api/balance from the
-			* official account API (key never reaches the browser); refresh 30s. */
+			* official account API (key never reaches the browser); refresh 30s.
+			* A deduction event calls tick(true) to pull a fresh balance right away,
+			* so the number moves with the money. */
 			(0, react.useEffect)(() => {
 				let alive = true;
-				const tick = () => {
-					fetch("/console-api/balance").then((resp) => resp.json()).then((value) => {
+				const tick = (fresh) => {
+					fetch("/console-api/balance" + (fresh ? "?fresh=1" : "")).then((resp) => resp.json()).then((value) => {
 						if (!alive || value === null || typeof value !== "object" || value.ok !== true) return;
 						const infos = value.data === void 0 ? void 0 : value.data.balance_infos;
 						if (Array.isArray(infos) && infos.length > 0 && infos[0] !== null && typeof infos[0] === "object") {
 							setBalanceText(formatYuan(Number(infos[0].total_balance), 2));
 							setBalanceFresh(true);
 						}
+						if (value.spend !== null && typeof value.spend === "object") {
+							if (typeof value.spend.today === "number") setSpendToday(value.spend.today);
+							if (typeof value.spend.total === "number") setSpendTotal(value.spend.total);
+						}
 					}).catch(() => {});
 				};
-				tick();
-				const timer = window.setInterval(tick, 30000);
+				refreshRef.current = tick;
+				tick(false);
+				const timer = window.setInterval(() => tick(false), 30000);
 				return () => {
 					alive = false;
 					window.clearInterval(timer);
 				};
 			}, []);
-			/** Persist last balance + today's spend across reloads (daily reset). */
+			/** Persist last balance + ledger spend across reloads (daily reset). */
 			(0, react.useEffect)(() => {
 				try {
-					localStorage.setItem(BALANCE_STORE_KEY, JSON.stringify({ balance: balanceText, parts: todayParts, combo, best: bestCombo, total: totalSpend, date: todayKey() }));
+					localStorage.setItem(BALANCE_STORE_KEY, JSON.stringify({ balance: balanceText, spendToday, spendTotal, date: todayKey() }));
 				} catch (error) {}
-			}, [balanceText, todayParts, combo, bestCombo, totalSpend]);
+			}, [balanceText, spendToday, spendTotal]);
 			/** Cost detection: each usage delta over ¥0.001 fires the hit effect;
-			* a delta whose uncached/write share is ≥40% fires the crit variant;
-			* input cache-hit rate ≥80% extends the combo, anything lower breaks it. */
+			* a delta whose uncached/write share is ≥40% fires the crit variant.
+			* The floater amount is an estimate (marked ≈); money totals stay with
+			* the host ledger, never this path. */
 			(0, react.useEffect)(() => {
 				if (usage === void 0) return;
 				const prev = prevUsageRef.current;
@@ -306,22 +328,11 @@ window.__ModuleLoader__.load({
 				const cost = costOfDelta(usage, prev);
 				if (cost.total < 0.001) return;
 				const crit = critFx && cost.total > 0 && cost.miss / cost.total >= 0.4;
-				const inputYuan = cost.miss + cost.hit;
-				const hitShare = inputYuan > 0 ? cost.hit / inputYuan : -1;
-				setTodayParts((parts) => ({ miss: parts.miss + cost.miss, hit: parts.hit + cost.hit, output: parts.output + cost.output }));
-				setTotalSpend((sum) => sum + cost.total);
-				if (hitShare >= 0.8) {
-					setCombo((n) => {
-						const next = n + 1;
-						setBestCombo((best) => Math.max(best, next));
-						return next;
-					});
-				} else if (hitShare >= 0) {
-					setCombo(0);
-				}
 				setHitFlash(true);
 				const id = dmgSeqRef.current++;
-				setDmgList((list) => list.concat({ id, text: (crit ? t("meter.crit") + " " : "") + "-" + formatYuan(cost.total, 4), crit }));
+				setDmgList((list) => list.concat({ id, text: (crit ? t("meter.crit") + " " : "") + "≈" + formatYuan(cost.total, 4), crit }));
+				const refresh = refreshRef.current;
+				if (typeof refresh === "function") refresh(true);
 				const flashTimer = window.setTimeout(() => setHitFlash(false), crit ? 600 : 260);
 				const dmgTimer = window.setTimeout(() => setDmgList((list) => list.filter((item) => item.id !== id)), crit ? 1500 : 1200);
 				return () => {
@@ -338,15 +349,9 @@ window.__ModuleLoader__.load({
 			const stateSuffix = occState.charAt(0).toUpperCase() + occState.slice(1);
 			const tipRows = [{
 				key: t("meter.balance"),
-				value: balanceText === null ? t("meter.balanceUnknown") : (balanceFresh ? "" : t("meter.last") + " ") + balanceText + (todayCost > 0 ? " · " + t("meter.today") + " -" + formatYuan(todayCost, 4) : "")
+				value: balanceText === null ? t("meter.balanceUnknown") : (balanceFresh ? "" : t("meter.last") + " ") + balanceText + (spendToday > 0 ? " · " + t("meter.today") + " -" + formatYuan(spendToday, 4) : "")
 			}];
-			if (todayCost > 0) {
-				tipRows.push({ key: t("meter.todayMiss"), value: "-" + formatYuan(todayParts.miss, 4) });
-				tipRows.push({ key: t("meter.todayHit"), value: "-" + formatYuan(todayParts.hit, 4) });
-				tipRows.push({ key: t("meter.todayOutput"), value: "-" + formatYuan(todayParts.output, 4) });
-			}
-			if (totalSpend > 0) tipRows.push({ key: t("meter.total"), value: formatYuan(totalSpend, 2) + (rank !== null ? " · " + t(rank.key) : "") });
-			if (bestCombo > 0) tipRows.push({ key: t("meter.bestCombo"), value: "×" + bestCombo });
+			if (spendTotal > 0) tipRows.push({ key: t("meter.total"), value: formatYuan(spendTotal, 2) + (rank !== null ? " · " + t(rank.key) : "") });
 			tipRows.push({
 				key: t("meter.tipContext"),
 				value: occ === null ? t("meter.tipNoData") : "~" + formatTokens(occ.used) + " / " + formatTokens(occ.window) + " · " + occ.percent + "%"
@@ -364,24 +369,23 @@ window.__ModuleLoader__.load({
 					children: [(0, react_jsx_runtime.jsxs)("div", {
 						className: ContextMeter_module_css_default.balanceRow,
 						children: [(0, react_jsx_runtime.jsxs)("span", {
-							className: ContextMeter_module_css_default.balanceLabel,
-							children: [t("meter.balance"), combo >= 2 ? (0, react_jsx_runtime.jsx)("span", {
-								className: ContextMeter_module_css_default.combo,
-								key: combo,
-								children: t("meter.combo", { n: combo })
-							}) : null]
-						}), (0, react_jsx_runtime.jsxs)("span", {
-							className: ContextMeter_module_css_default.balanceRight,
+							className: ContextMeter_module_css_default.balanceLeft,
 							children: [(0, react_jsx_runtime.jsx)("span", {
+								className: ContextMeter_module_css_default.balanceLabel,
+								children: t("meter.balance")
+							}), (0, react_jsx_runtime.jsx)("span", {
 								className: ContextMeter_module_css_default.balanceValue + (hitFlash ? " " + ContextMeter_module_css_default.hit : ""),
 								children: balanceText === null ? "" : (balanceFresh ? "" : t("meter.last") + " ") + balanceText
-							}), rank !== null ? (0, react_jsx_runtime.jsx)("span", {
+							})]
+						}), (0, react_jsx_runtime.jsxs)("span", {
+							className: ContextMeter_module_css_default.balanceRight,
+							children: [rank !== null ? (0, react_jsx_runtime.jsx)("span", {
 								className: ContextMeter_module_css_default.rank,
 								style: { color: rank.color },
 								children: t(rank.key)
-							}) : null, todayCost > 0 ? (0, react_jsx_runtime.jsx)("span", {
+							}) : null, spendToday > 0 ? (0, react_jsx_runtime.jsx)("span", {
 								className: ContextMeter_module_css_default.today,
-								children: t("meter.today") + " -" + formatYuan(todayCost, 4)
+								children: t("meter.today") + " -" + formatYuan(spendToday, 4)
 							}) : null]
 						})]
 					}), (0, react_jsx_runtime.jsxs)("div", {
@@ -985,6 +989,68 @@ window.__ModuleLoader__.load({
 			});
 		}
 		//#endregion
+		//#region lib/types/client/ProfileSettings.js
+		/** Settings page for the personal profile: edits ~/.dsh/profile.md through
+		* the host route; the host half injects it into every conversation. */
+		function ProfileSettings({ t }) {
+			const [text, setText] = (0, react.useState)("");
+			const [loading, setLoading] = (0, react.useState)(true);
+			const [saved, setSaved] = (0, react.useState)(false);
+			(0, react.useEffect)(() => {
+				let alive = true;
+				fetch("/console-api/profile").then((resp) => resp.json()).then((value) => {
+					if (!alive) return;
+					if (value !== null && typeof value === "object" && value.ok === true) setText(typeof value.text === "string" ? value.text : "");
+					setLoading(false);
+				}).catch(() => {
+					if (alive) setLoading(false);
+				});
+				return () => {
+					alive = false;
+				};
+			}, []);
+			const onSave = () => {
+				fetch("/console-api/profile", {
+					method: "POST",
+					headers: { "content-type": "application/json" },
+					body: JSON.stringify({ text })
+				}).then((resp) => resp.json()).then((value) => {
+					if (value !== null && typeof value === "object" && value.ok === true) {
+						setSaved(true);
+						window.setTimeout(() => setSaved(false), 2000);
+					}
+				}).catch(() => {});
+			};
+			return (0, react_jsx_runtime.jsxs)("div", {
+				className: IslandSettings_module_css_default.root,
+				children: [(0, react_jsx_runtime.jsx)("div", {
+					className: ProfileSettings_module_css_default.desc,
+					children: t("profile.desc")
+				}), (0, react_jsx_runtime.jsx)("textarea", {
+					className: ProfileSettings_module_css_default.area,
+					value: text,
+					disabled: loading,
+					onChange: (event) => {
+						setText(event.target.value);
+					}
+				}), (0, react_jsx_runtime.jsxs)("div", {
+					className: ProfileSettings_module_css_default.foot,
+					children: [(0, react_jsx_runtime.jsx)("span", {
+						className: ProfileSettings_module_css_default.count,
+						children: t("profile.count", { n: text.length })
+					}), saved ? (0, react_jsx_runtime.jsx)("span", {
+						className: ProfileSettings_module_css_default.saved,
+						children: t("profile.saved")
+					}) : null, (0, react_jsx_runtime.jsx)("button", {
+						type: "button",
+						className: ProfileSettings_module_css_default.save,
+						onClick: onSave,
+						children: t("profile.save")
+					})]
+				})]
+			});
+		}
+		//#endregion
 		//#region lib/types/client/locales.js
 		/** `sidebar` namespace dictionaries: shell controls (brand row, New Session, fold toggle). */
 		/** Simplified Chinese dictionary (the key-set source of truth). */
@@ -1006,11 +1072,6 @@ window.__ModuleLoader__.load({
 			"meter.last": "上次",
 			"meter.today": "今日",
 			"meter.crit": "暴击",
-			"meter.todayMiss": "未命中",
-			"meter.todayHit": "命中",
-			"meter.todayOutput": "生成",
-			"meter.combo": "连击 ×{n}",
-			"meter.bestCombo": "最高连击",
 			"meter.total": "累计",
 			"meter.rank0": "白嫖党",
 			"meter.rank1": "小试牛刀",
@@ -1022,6 +1083,11 @@ window.__ModuleLoader__.load({
 			"meter.rank7": "财神下凡",
 			"plan.title": "计划",
 			"plan.done": "全部完成",
+			"profileNav": "关于你",
+			"profile.desc": "写在下面的内容会在每次对话开始时注入上下文，让 AI 了解你的身份与偏好。也保存在 ~/.dsh/profile.md，可直接用编辑器修改。",
+			"profile.save": "保存",
+			"profile.saved": "已保存",
+			"profile.count": "{n} 字符",
 			"island.done": "任务完成",
 			"island.approval": "需要审批",
 			"island.job": "后台任务完成",
@@ -1061,11 +1127,6 @@ window.__ModuleLoader__.load({
 			"meter.last": "Last",
 			"meter.today": "Today",
 			"meter.crit": "CRIT",
-			"meter.todayMiss": "Miss",
-			"meter.todayHit": "Hit",
-			"meter.todayOutput": "Output",
-			"meter.combo": "Combo ×{n}",
-			"meter.bestCombo": "Best combo",
 			"meter.total": "Total",
 			"meter.rank0": "Freeloader",
 			"meter.rank1": "Warming Up",
@@ -1077,6 +1138,11 @@ window.__ModuleLoader__.load({
 			"meter.rank7": "God of Fortune",
 			"plan.title": "Plan",
 			"plan.done": "All done",
+			"profileNav": "About you",
+			"profile.desc": "What you write below is injected into every conversation so the AI knows your identity and preferences. Also stored at ~/.dsh/profile.md and editable with any editor.",
+			"profile.save": "Save",
+			"profile.saved": "Saved",
+			"profile.count": "{n} chars",
 			"island.done": "Task complete",
 			"island.approval": "Needs approval",
 			"island.job": "Background job finished",
@@ -1149,6 +1215,13 @@ window.__ModuleLoader__.load({
 				priority: -1,
 				locale: NS
 			}, PlanBoard)), "ui-console: plan board");
+			ctx.effect(() => ctx.slots.inject("settings.section", () => ctx.slots.register({
+				name: "settings.section",
+				id: "profile",
+				order: 7,
+				label: () => t("profileNav"),
+				locale: NS
+			}, ProfileSettings)), "ui-console: profile settings");
 		}
 		//#endregion
 		exports.apply = apply;
