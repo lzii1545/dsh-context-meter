@@ -9,7 +9,7 @@ window.__ModuleLoader__.load({
 		let _deepseek_ai_dsh_client_ui_primitives = require("@deepseek-ai/dsh-client-ui-primitives");
 		let _deepseek_ai_dsh_client_runtime_client = require("@deepseek-ai/dsh-client-runtime/client");
 //#region \0dsh-css:/home/runner/work/deepseek-harness/deepseek-harness/packages/client/ui-sidebar/src/client/ContextMeter.module.css.mjs
-		const contextMeterCss = ".cxm-root{box-sizing:border-box;position:relative;flex:none;width:100%;min-width:0;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Text\",\"Segoe UI\",system-ui,sans-serif;letter-spacing:-.01em}.cxm-card{width:100%;margin:0;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-layer-2);background:color-mix(in srgb,var(--dsw-alias-bg-layer-1) 58%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 60%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 1px 2px rgba(0,0,0,.05),0 6px 20px -8px rgba(0,0,0,.12);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);display:flex;flex-direction:column;gap:7px;animation:cxm-in .3s cubic-bezier(.22,1,.36,1);transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s cubic-bezier(.22,1,.36,1)}.cxm-card:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 2px 4px rgba(0,0,0,.06),0 10px 28px -8px rgba(0,0,0,.16)}@keyframes cxm-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}.cxm-rail{margin-top:0;padding:0;display:grid;place-items:center;width:36px;height:36px;border-radius:50%}.cxm-rail:hover{background:var(--dsw-alias-interactive-bg-hover)}.cxm-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cxm-pct{flex:none;font-size:12px;line-height:16px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--dsw-alias-label-primary)}.cxm-pct-blue{color:#0A84FF}.cxm-pct-orange{color:#FF9F0A}.cxm-pct-red{color:#FF453A}.cxm-pct-green{color:#30D158}.cxm-track{flex:none;height:4px;border-radius:999px;background:var(--dsw-alias-interactive-bg-hover);background:color-mix(in srgb,var(--dsw-alias-label-primary) 8%,transparent);overflow:hidden;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}.cxm-fill{height:100%;border-radius:999px;transition:width .3s cubic-bezier(.22,1,.36,1)}.cxm-fill-blue{background-color:#0A84FF}.cxm-fill-orange{background-color:#FF9F0A}.cxm-fill-red{background-color:#FF453A}.cxm-fill-green{background-color:#30D158}.cxm-fill-blue,.cxm-fill-orange,.cxm-fill-red,.cxm-fill-green{background-image:linear-gradient(180deg,rgba(255,255,255,.32),rgba(255,255,255,0) 55%)}.cxm-tip{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px) scale(.98);z-index:60;box-sizing:border-box;width:236px;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-overlay);background:color-mix(in srgb,var(--dsw-alias-bg-overlay) 78%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 65%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 1px 2px rgba(0,0,0,.06),0 12px 32px -8px rgba(0,0,0,.22);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1),visibility 0s linear .16s}.cxm-card:hover>.cxm-tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0) scale(1);transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1)}.cxm-tip-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:3px 0;font-size:12px;line-height:17px}.cxm-tip-key{flex:none;color:var(--dsw-alias-label-secondary)}.cxm-tip-val{min-width:0;color:var(--dsw-alias-label-primary);font-variant-numeric:tabular-nums;text-align:right}.cxm-ring-track{fill:none;stroke:var(--dsw-alias-border-l1);stroke:color-mix(in srgb,var(--dsw-alias-label-primary) 12%,transparent);stroke-width:2.5}.cxm-ring-fill{fill:none;stroke-width:2.5;stroke-linecap:round}.cxm-ring-blue{stroke:#0A84FF}.cxm-ring-orange{stroke:#FF9F0A}.cxm-ring-red{stroke:#FF453A}.cxm-card:first-child{margin-top:8px}.cxm-card:not(:first-child){margin-left:-100%;margin-top:57px}";
+		const contextMeterCss = ".cxm-root{box-sizing:border-box;position:relative;flex:none;width:100%;min-width:0;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Text\",\"Segoe UI\",system-ui,sans-serif;letter-spacing:-.01em}.cxm-card{width:100%;margin:0;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-layer-2);background:color-mix(in srgb,var(--dsw-alias-bg-layer-1) 58%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 60%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 1px 2px rgba(0,0,0,.05),0 6px 20px -8px rgba(0,0,0,.12);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);display:flex;flex-direction:column;gap:7px;animation:cxm-in .3s cubic-bezier(.22,1,.36,1);transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s cubic-bezier(.22,1,.36,1)}.cxm-card:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 2px 4px rgba(0,0,0,.06),0 10px 28px -8px rgba(0,0,0,.16)}@keyframes cxm-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}.cxm-rail{margin-top:0;padding:0;display:grid;place-items:center;width:36px;height:36px;border-radius:50%}.cxm-rail:hover{background:var(--dsw-alias-interactive-bg-hover)}.cxm-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cxm-pct{flex:none;font-size:12px;line-height:16px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--dsw-alias-label-primary)}.cxm-pct-blue{color:#0A84FF}.cxm-pct-orange{color:#FF9F0A}.cxm-pct-red{color:#FF453A}.cxm-pct-green{color:#30D158}.cxm-track{flex:none;height:4px;border-radius:999px;background:var(--dsw-alias-interactive-bg-hover);background:color-mix(in srgb,var(--dsw-alias-label-primary) 8%,transparent);overflow:hidden;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}.cxm-fill{height:100%;border-radius:999px;transition:width .3s cubic-bezier(.22,1,.36,1)}.cxm-fill-blue{background-color:#0A84FF}.cxm-fill-orange{background-color:#FF9F0A}.cxm-fill-red{background-color:#FF453A}.cxm-fill-green{background-color:#30D158}.cxm-fill-blue,.cxm-fill-orange,.cxm-fill-red,.cxm-fill-green{background-image:linear-gradient(180deg,rgba(255,255,255,.32),rgba(255,255,255,0) 55%)}.cxm-tip{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px) scale(.98);z-index:60;box-sizing:border-box;width:236px;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-overlay);background:color-mix(in srgb,var(--dsw-alias-bg-overlay) 78%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 65%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 1px 2px rgba(0,0,0,.06),0 12px 32px -8px rgba(0,0,0,.22);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1),visibility 0s linear .16s}.cxm-card:hover>.cxm-tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0) scale(1);transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1)}.cxm-tip-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:3px 0;font-size:12px;line-height:17px}.cxm-tip-key{flex:none;color:var(--dsw-alias-label-secondary)}.cxm-tip-val{min-width:0;color:var(--dsw-alias-label-primary);font-variant-numeric:tabular-nums;text-align:right}.cxm-ring-track{fill:none;stroke:var(--dsw-alias-border-l1);stroke:color-mix(in srgb,var(--dsw-alias-label-primary) 12%,transparent);stroke-width:2.5}.cxm-ring-fill{fill:none;stroke-width:2.5;stroke-linecap:round}.cxm-ring-blue{stroke:#0A84FF}.cxm-ring-orange{stroke:#FF9F0A}.cxm-ring-red{stroke:#FF453A}.cxm-card:first-child{margin-top:8px}.cxm-card:not(:first-child){margin-left:-100%;margin-top:57px}.cxm-balance-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-balance-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);display:inline-flex;align-items:center;gap:4px}.cxm-balance-right{flex:none;display:inline-flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums}.cxm-balance-value{font-size:12px;line-height:16px;font-weight:600;color:var(--dsw-alias-label-primary);transition:color .25s ease}.cxm-balance-value.cxm-hit{color:#FF453A}.cxm-today{font-size:11px;line-height:16px;color:var(--dsw-alias-label-secondary)}.cxm-dmg{position:absolute;right:12px;top:4px;z-index:5;pointer-events:none;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;color:#FF453A;animation:cxm-dmg-rise 1.1s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-rise{0%{opacity:0;transform:translateY(2px) scale(.9)}18%{opacity:1}100%{opacity:0;transform:translateY(-20px) scale(1)}}.cxm-dmg-crit{font-size:16px;font-weight:700;color:#FF453A;text-shadow:0 1px 8px rgba(255,69,58,.55);animation:cxm-dmg-crit-rise 1.4s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-crit-rise{0%{opacity:0;transform:translateY(4px) scale(.7) rotate(-2deg)}16%{opacity:1;transform:scale(1.14)}32%{transform:scale(1)}100%{opacity:0;transform:translateY(-30px) scale(1)}}";
 		const contextMeterTagId = "dsh-context-console/ContextMeter.module.css";
 		if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(contextMeterTagId) + "]") === null) {
 			const tag = document.createElement("style");
@@ -43,7 +43,15 @@ window.__ModuleLoader__.load({
 			"ringFill": "cxm-ring-fill",
 			"ringBlue": "cxm-ring-blue",
 			"ringOrange": "cxm-ring-orange",
-			"ringRed": "cxm-ring-red"
+			"ringRed": "cxm-ring-red",
+			"balanceRow": "cxm-balance-row",
+			"balanceLabel": "cxm-balance-label",
+			"balanceRight": "cxm-balance-right",
+			"balanceValue": "cxm-balance-value",
+			"hit": "cxm-hit",
+			"today": "cxm-today",
+			"dmg": "cxm-dmg",
+			"dmgCrit": "cxm-dmg-crit"
 		};
 		//#endregion
 		//#region \0dsh-css:/home/runner/work/deepseek-harness/deepseek-harness/packages/client/ui-sidebar/src/client/ContextIsland.module.css.mjs
@@ -140,6 +148,47 @@ window.__ModuleLoader__.load({
 			if (percent >= 60) return "orange";
 			return "blue";
 		}
+		/** Money formatting: two decimals for balances, four for per-message costs. */
+		function formatYuan(n, digits) {
+			if (typeof n !== "number" || !Number.isFinite(n) || n < 0) return "—";
+			return "¥" + n.toFixed(digits === void 0 ? 2 : digits);
+		}
+		/** Estimated DeepSeek chat cost (CNY) of one usage delta, split by bucket:
+		* uncached input ¥2/M, cache reads ¥0.5/M, cache writes ¥2/M, output ¥8/M.
+		* `miss` includes cache writes (both are the "expensive" family). Estimates. */
+		function costOfDelta(next, prev) {
+			if (prev === void 0 || next === void 0) return { miss: 0, hit: 0, output: 0, total: 0 };
+			const miss = Math.max(0, (next.uncachedInputTokens ?? 0) - (prev.uncachedInputTokens ?? 0));
+			const read = Math.max(0, (next.cacheReadTokens ?? 0) - (prev.cacheReadTokens ?? 0));
+			const write = Math.max(0, (next.cacheWriteTokens ?? 0) - (prev.cacheWriteTokens ?? 0));
+			const output = Math.max(0, (next.outputTokens ?? 0) - (prev.outputTokens ?? 0));
+			const missYuan = (miss + write) * 2 / 1e6;
+			const hitYuan = read * 0.5 / 1e6;
+			const outputYuan = output * 8 / 1e6;
+			return { miss: missYuan, hit: hitYuan, output: outputYuan, total: missYuan + hitYuan + outputYuan };
+		}
+		/** Local persistence for the HUD: last known balance and today's spend. */
+		const BALANCE_STORE_KEY = "dsh-context-console.balance-state";
+		function todayKey() {
+			const d = new Date();
+			return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+		}
+		function loadBalanceState() {
+			try {
+				const raw = localStorage.getItem(BALANCE_STORE_KEY);
+				if (raw === null) return { balance: null, today: 0, date: "" };
+				const parsed = JSON.parse(raw);
+				const parts = parsed.parts;
+				const num = (value) => typeof value === "number" && Number.isFinite(value) && value >= 0 ? value : 0;
+				return {
+					balance: typeof parsed.balance === "string" ? parsed.balance : null,
+					parts: parts !== null && typeof parts === "object" ? { miss: num(parts.miss), hit: num(parts.hit), output: num(parts.output) } : { miss: 0, hit: 0, output: 0 },
+					date: typeof parsed.date === "string" ? parsed.date : ""
+				};
+			} catch (error) {
+				return { balance: null, parts: { miss: 0, hit: 0, output: 0 }, date: "" };
+			}
+		}
 		/** Read one projection leaf off the current session's list row. */
 		function projectionOf(s, key) {
 			if (s === void 0 || s === null || s.byId === void 0) return void 0;
@@ -147,11 +196,68 @@ window.__ModuleLoader__.load({
 			const pv = row === void 0 ? void 0 : row.projectionValues;
 			return pv === void 0 ? void 0 : pv[key];
 		}
-		function ContextMeter({ wide, useSessions, t }) {
+		function ContextMeter({ wide, useSessions, useStore, t }) {
 			const currentId = useSessions((s) => s === void 0 ? void 0 : s.current);
 			const usage = useSessions((s) => projectionOf(s, "tokenUsage"));
 			const pressure = useSessions((s) => projectionOf(s, "contextPressure"));
 			const breakdown = useSessions((s) => projectionOf(s, "contextBreakdown"));
+			const critFx = useStore((s) => s.critFx !== false);
+			const initialBalance = loadBalanceState();
+			const [balanceText, setBalanceText] = (0, react.useState)(initialBalance.balance);
+			const [balanceFresh, setBalanceFresh] = (0, react.useState)(false);
+			const [hitFlash, setHitFlash] = (0, react.useState)(false);
+			const [dmgList, setDmgList] = (0, react.useState)([]);
+			const [todayParts, setTodayParts] = (0, react.useState)(initialBalance.date === todayKey() ? initialBalance.parts : { miss: 0, hit: 0, output: 0 });
+			const todayCost = todayParts.miss + todayParts.hit + todayParts.output;
+			const prevUsageRef = (0, react.useRef)(void 0);
+			const dmgSeqRef = (0, react.useRef)(0);
+			/** Balance polling: the host half serves /console-api/balance from the
+			* official account API (key never reaches the browser); refresh 30s. */
+			(0, react.useEffect)(() => {
+				let alive = true;
+				const tick = () => {
+					fetch("/console-api/balance").then((resp) => resp.json()).then((value) => {
+						if (!alive || value === null || typeof value !== "object" || value.ok !== true) return;
+						const infos = value.data === void 0 ? void 0 : value.data.balance_infos;
+						if (Array.isArray(infos) && infos.length > 0 && infos[0] !== null && typeof infos[0] === "object") {
+							setBalanceText(formatYuan(Number(infos[0].total_balance), 2));
+							setBalanceFresh(true);
+						}
+					}).catch(() => {});
+				};
+				tick();
+				const timer = window.setInterval(tick, 30000);
+				return () => {
+					alive = false;
+					window.clearInterval(timer);
+				};
+			}, []);
+			/** Persist last balance + today's spend across reloads (daily reset). */
+			(0, react.useEffect)(() => {
+				try {
+					localStorage.setItem(BALANCE_STORE_KEY, JSON.stringify({ balance: balanceText, parts: todayParts, date: todayKey() }));
+				} catch (error) {}
+			}, [balanceText, todayParts]);
+			/** Cost detection: each usage delta over ¥0.001 fires the hit effect;
+			* a delta whose uncached/write share is ≥40% fires the crit variant. */
+			(0, react.useEffect)(() => {
+				if (usage === void 0) return;
+				const prev = prevUsageRef.current;
+				prevUsageRef.current = usage;
+				const cost = costOfDelta(usage, prev);
+				if (cost.total < 0.001) return;
+				const crit = critFx && cost.total > 0 && cost.miss / cost.total >= 0.4;
+				setTodayParts((parts) => ({ miss: parts.miss + cost.miss, hit: parts.hit + cost.hit, output: parts.output + cost.output }));
+				setHitFlash(true);
+				const id = dmgSeqRef.current++;
+				setDmgList((list) => list.concat({ id, text: (crit ? t("meter.crit") + " " : "") + "-" + formatYuan(cost.total, 4), crit }));
+				const flashTimer = window.setTimeout(() => setHitFlash(false), crit ? 600 : 260);
+				const dmgTimer = window.setTimeout(() => setDmgList((list) => list.filter((item) => item.id !== id)), crit ? 1500 : 1200);
+				return () => {
+					window.clearTimeout(flashTimer);
+					window.clearTimeout(dmgTimer);
+				};
+			}, [usage, critFx]);
 			if (currentId === void 0) return null;
 			const occ = occupancyOf(pressure);
 			const cache = cacheOf(usage);
@@ -160,12 +266,21 @@ window.__ModuleLoader__.load({
 			const occState = occ === null ? "blue" : pressureState(occ.percent);
 			const stateSuffix = occState.charAt(0).toUpperCase() + occState.slice(1);
 			const tipRows = [{
+				key: t("meter.balance"),
+				value: balanceText === null ? t("meter.balanceUnknown") : (balanceFresh ? "" : t("meter.last") + " ") + balanceText + (todayCost > 0 ? " · " + t("meter.today") + " -" + formatYuan(todayCost, 4) : "")
+			}];
+			if (todayCost > 0) {
+				tipRows.push({ key: t("meter.todayMiss"), value: "-" + formatYuan(todayParts.miss, 4) });
+				tipRows.push({ key: t("meter.todayHit"), value: "-" + formatYuan(todayParts.hit, 4) });
+				tipRows.push({ key: t("meter.todayOutput"), value: "-" + formatYuan(todayParts.output, 4) });
+			}
+			tipRows.push({
 				key: t("meter.tipContext"),
 				value: occ === null ? t("meter.tipNoData") : "~" + formatTokens(occ.used) + " / " + formatTokens(occ.window) + " · " + occ.percent + "%"
 			}, {
 				key: t("meter.tipCache"),
 				value: cache === null ? t("meter.tipNoData") : cache.percent + "%（" + t("meter.tipHit") + " " + formatTokens(cache.read) + " · " + t("meter.tipMiss") + " " + formatTokens(cache.miss) + " · " + t("meter.tipWrite") + " " + formatTokens(cache.write) + "）"
-			}];
+			});
 			if (breakdown !== void 0 && breakdown !== null) tipRows.push({
 				key: t("meter.tipComposition"),
 				value: t("meter.tipSystem") + " " + formatTokens(breakdown.systemTokens) + " · " + t("meter.tipTools") + " " + formatTokens(breakdown.toolsTokens) + " · " + t("meter.tipMessages") + " " + formatTokens(breakdown.messageTokens)
@@ -174,6 +289,21 @@ window.__ModuleLoader__.load({
 				return (0, react_jsx_runtime.jsxs)("div", {
 					className: ContextMeter_module_css_default.root + " " + ContextMeter_module_css_default.card,
 					children: [(0, react_jsx_runtime.jsxs)("div", {
+						className: ContextMeter_module_css_default.balanceRow,
+						children: [(0, react_jsx_runtime.jsxs)("span", {
+							className: ContextMeter_module_css_default.balanceLabel,
+							children: t("meter.balance")
+						}), (0, react_jsx_runtime.jsxs)("span", {
+							className: ContextMeter_module_css_default.balanceRight,
+							children: [(0, react_jsx_runtime.jsx)("span", {
+								className: ContextMeter_module_css_default.balanceValue + (hitFlash ? " " + ContextMeter_module_css_default.hit : ""),
+								children: balanceText === null ? "" : (balanceFresh ? "" : t("meter.last") + " ") + balanceText
+							}), todayCost > 0 ? (0, react_jsx_runtime.jsx)("span", {
+								className: ContextMeter_module_css_default.today,
+								children: t("meter.today") + " -" + formatYuan(todayCost, 4)
+							}) : null]
+						})]
+					}), (0, react_jsx_runtime.jsxs)("div", {
 						className: ContextMeter_module_css_default.row,
 						children: [(0, react_jsx_runtime.jsx)("span", {
 							className: ContextMeter_module_css_default.label,
@@ -203,7 +333,11 @@ window.__ModuleLoader__.load({
 							className: ContextMeter_module_css_default.fill + " " + ContextMeter_module_css_default.fillGreen,
 							style: { width: (cache === null ? 0 : cache.percent) + "%" }
 						})
-					}), (0, react_jsx_runtime.jsx)("div", {
+					}), dmgList.map((item) => (0, react_jsx_runtime.jsx)("span", {
+						className: ContextMeter_module_css_default.dmg + (item.crit ? " " + ContextMeter_module_css_default.dmgCrit : ""),
+						key: item.id,
+						children: item.text
+					})), (0, react_jsx_runtime.jsx)("div", {
 						className: ContextMeter_module_css_default.tip,
 						role: "tooltip",
 						children: tipRows.map((row, i) => (0, react_jsx_runtime.jsxs)("div", {
@@ -483,12 +617,16 @@ window.__ModuleLoader__.load({
 		function createIslandSettingsStore() {
 			return (0, _deepseek_ai_dsh_client_runtime_client.defineStore)({
 				init: () => ({
-					enabled: true
+					enabled: true,
+					critFx: true
 				}),
 				persist: "dsh-context-console.island-settings",
 				actions: {
 					setEnabled: (draft, enabled) => {
 						draft.enabled = enabled === true;
+					},
+					setCritFx: (draft, critFx) => {
+						draft.critFx = critFx === true;
 					}
 				}
 			});
@@ -510,8 +648,12 @@ window.__ModuleLoader__.load({
 		function IslandSettings({ useStore, actions, t }) {
 			const [perm, setPerm] = (0, react.useState)(typeof Notification !== "undefined" ? Notification.permission : "unsupported");
 			const enabled = useStore((s) => s.enabled === true);
+			const critFx = useStore((s) => s.critFx !== false);
 			const onToggle = () => {
 				if (actions !== void 0 && typeof actions.setEnabled === "function") actions.setEnabled(!enabled);
+			};
+			const onToggleCrit = () => {
+				if (actions !== void 0 && typeof actions.setCritFx === "function") actions.setCritFx(!critFx);
 			};
 			const onRequest = () => {
 				if (typeof Notification === "undefined") return;
@@ -545,6 +687,25 @@ window.__ModuleLoader__.load({
 							role: "switch",
 							"aria-checked": enabled,
 							onClick: onToggle
+						})]
+					}), (0, react_jsx_runtime.jsxs)("div", {
+						className: IslandSettings_module_css_default.row,
+						children: [(0, react_jsx_runtime.jsxs)("div", {
+							className: IslandSettings_module_css_default.text,
+							children: [(0, react_jsx_runtime.jsx)("div", {
+								className: IslandSettings_module_css_default.label,
+								children: t("island.critFx")
+							}), (0, react_jsx_runtime.jsx)("div", {
+								className: IslandSettings_module_css_default.sub,
+								children: t("island.critFxDesc")
+							})]
+						}), (0, react_jsx_runtime.jsx)("button", {
+							type: "button",
+							className: IslandSettings_module_css_default.switch,
+							"data-on": String(critFx),
+							role: "switch",
+							"aria-checked": critFx,
+							onClick: onToggleCrit
 						})]
 					}), (0, react_jsx_runtime.jsxs)("div", {
 						className: IslandSettings_module_css_default.row,
@@ -592,6 +753,14 @@ window.__ModuleLoader__.load({
 			"meter.tipTools": "工具",
 			"meter.tipMessages": "消息",
 			"meter.tipNoData": "暂无数据（首次模型请求后显示）",
+			"meter.balance": "余额",
+			"meter.balanceUnknown": "获取中…",
+			"meter.last": "上次",
+			"meter.today": "今日",
+			"meter.crit": "暴击",
+			"meter.todayMiss": "未命中",
+			"meter.todayHit": "命中",
+			"meter.todayOutput": "生成",
 			"island.done": "任务完成",
 			"island.approval": "需要审批",
 			"island.job": "后台任务完成",
@@ -608,7 +777,9 @@ window.__ModuleLoader__.load({
 			"island.test": "测试弹窗",
 			"island.testTitle": "测试通知",
 			"island.testDetail": "灵动岛测试",
-			"island.hint": "仅当窗口未聚焦时弹出；标签隐藏时同时发送桌面通知"
+			"island.hint": "仅当窗口未聚焦时弹出；标签隐藏时同时发送桌面通知",
+			"island.critFx": "暴击特效",
+			"island.critFxDesc": "未命中占比 ≥40% 时放大飘字"
 		};
 		/** English dictionary, checked complete against the zh key set. */
 		const en = {
@@ -624,6 +795,14 @@ window.__ModuleLoader__.load({
 			"meter.tipTools": "Tools",
 			"meter.tipMessages": "Messages",
 			"meter.tipNoData": "No data yet — appears after the first model request",
+			"meter.balance": "Balance",
+			"meter.balanceUnknown": "Loading…",
+			"meter.last": "Last",
+			"meter.today": "Today",
+			"meter.crit": "CRIT",
+			"meter.todayMiss": "Miss",
+			"meter.todayHit": "Hit",
+			"meter.todayOutput": "Output",
 			"island.done": "Task complete",
 			"island.approval": "Needs approval",
 			"island.job": "Background job finished",
@@ -640,7 +819,9 @@ window.__ModuleLoader__.load({
 			"island.test": "Test popup",
 			"island.testTitle": "Test notification",
 			"island.testDetail": "Dynamic Island test",
-			"island.hint": "Pops only while the window is unfocused; a desktop notification is also sent while the tab is hidden"
+			"island.hint": "Pops only while the window is unfocused; a desktop notification is also sent while the tab is hidden",
+			"island.critFx": "Critical-hit effects",
+			"island.critFxDesc": "Bigger floaters when cache misses dominate (≥40%)"
 		};
 		//#endregion
 		
@@ -665,7 +846,8 @@ window.__ModuleLoader__.load({
 				name: "sidebar.footer.action",
 				id: "context-meter",
 				order: 1,
-				locale: NS
+				locale: NS,
+				store: islandStore
 			}, ContextMeter)), "ui-console: context meter");
 			ctx.effect(() => ctx.slots.inject("shell.overlay", () => ctx.slots.register({
 				name: "shell.overlay",

@@ -1,6 +1,6 @@
 {
   "name": "dsh-context-console",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": true,
   "description": "Sidebar context meter + Dynamic Island notifications for the DeepSeek Harness web UI",
   "type": "module",
