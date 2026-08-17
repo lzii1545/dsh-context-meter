@@ -14,7 +14,7 @@ import { launchEnvironmentOf } from "@deepseek-ai/dsh-launch-environment";
 const BALANCE_CACHE_MS = 30000;
 const PROFILE_MAX_BYTES = 32000;
 const PROFILE_PREFIX = "以下是你（用户）写下的个人说明，请记住并在对话中遵守：\n\n";
-const inject = ["webServer"];
+const inject = ["webServer", "systemPrompt"];
 const name = "dsh-context-console";
 function createUserMessage(input) {
 	return createMessage({
@@ -95,6 +95,13 @@ async function resolveApiKey(ctx) {
 	return { key: void 0, source: "none", detail };
 }
 function apply(ctx, config = {}) {
+	/* 系统提示里钉一条硬规矩：动手前必须建列表。说明书是普通消息、权重低，
+	 * 工具描述里还有"琐碎任务可跳过"的反向暗示，所以这条要进系统提示层。 */
+	ctx.effect(() => ctx.systemPrompt.section({
+		name: "dsh-context-console:todo-mandate",
+		order: 120,
+		text: "任何任务（包括看似单步的小任务）开始前，必须先调用 todo_write 建立任务列表：把任务拆成具体步骤，当前进行中的一项标 in_progress。每完成一项立即更新列表；全部完成后，列表中才允许没有 in_progress 项。没有列表直接动手视为违规。"
+	}), "ui-console: todo mandate");
 	let cache = null;
 	/** 拉一次官方余额并记台账（不碰缓存）。扣费触发时客户端会带 fresh=1 走这里。 */
 	const fetchUpstream = async () => {
