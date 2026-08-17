@@ -9,7 +9,7 @@ window.__ModuleLoader__.load({
 		let _deepseek_ai_dsh_client_ui_primitives = require("@deepseek-ai/dsh-client-ui-primitives");
 		let _deepseek_ai_dsh_client_runtime_client = require("@deepseek-ai/dsh-client-runtime/client");
 //#region \0dsh-css:/home/runner/work/deepseek-harness/deepseek-harness/packages/client/ui-sidebar/src/client/ContextMeter.module.css.mjs
-		const contextMeterCss = ".cxm-root{box-sizing:border-box;position:relative;flex:none;width:100%;min-width:0;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Text\",\"Segoe UI\",system-ui,sans-serif;letter-spacing:-.01em}.cxm-card{width:100%;margin:0;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-layer-2);background:color-mix(in srgb,var(--dsw-alias-bg-layer-1) 58%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 60%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 1px 2px rgba(0,0,0,.05),0 6px 20px -8px rgba(0,0,0,.12);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);display:flex;flex-direction:column;gap:7px;animation:cxm-in .3s cubic-bezier(.22,1,.36,1);transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s cubic-bezier(.22,1,.36,1)}.cxm-card:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 2px 4px rgba(0,0,0,.06),0 10px 28px -8px rgba(0,0,0,.16)}@keyframes cxm-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}.cxm-rail{margin-top:0;padding:0;display:grid;place-items:center;width:36px;height:36px;border-radius:50%}.cxm-rail:hover{background:var(--dsw-alias-interactive-bg-hover)}.cxm-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cxm-pct{flex:none;font-size:12px;line-height:16px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--dsw-alias-label-primary)}.cxm-pct-blue{color:#0A84FF}.cxm-pct-orange{color:#FF9F0A}.cxm-pct-red{color:#FF453A}.cxm-pct-green{color:#30D158}.cxm-track{flex:none;height:4px;border-radius:999px;background:var(--dsw-alias-interactive-bg-hover);background:color-mix(in srgb,var(--dsw-alias-label-primary) 8%,transparent);overflow:hidden;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}.cxm-fill{height:100%;border-radius:999px;transition:width .3s cubic-bezier(.22,1,.36,1)}.cxm-fill-blue{background-color:#0A84FF}.cxm-fill-orange{background-color:#FF9F0A}.cxm-fill-red{background-color:#FF453A}.cxm-fill-green{background-color:#30D158}.cxm-fill-blue,.cxm-fill-orange,.cxm-fill-red,.cxm-fill-green{background-image:linear-gradient(180deg,rgba(255,255,255,.32),rgba(255,255,255,0) 55%)}.cxm-tip{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px) scale(.98);z-index:60;box-sizing:border-box;width:236px;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-overlay);background:color-mix(in srgb,var(--dsw-alias-bg-overlay) 78%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 65%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 1px 2px rgba(0,0,0,.06),0 12px 32px -8px rgba(0,0,0,.22);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1),visibility 0s linear .16s}.cxm-card:hover>.cxm-tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0) scale(1);transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1)}.cxm-tip-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:3px 0;font-size:12px;line-height:17px}.cxm-tip-key{flex:none;color:var(--dsw-alias-label-secondary)}.cxm-tip-val{min-width:0;color:var(--dsw-alias-label-primary);font-variant-numeric:tabular-nums;text-align:right}.cxm-ring-track{fill:none;stroke:var(--dsw-alias-border-l1);stroke:color-mix(in srgb,var(--dsw-alias-label-primary) 12%,transparent);stroke-width:2.5}.cxm-ring-fill{fill:none;stroke-width:2.5;stroke-linecap:round}.cxm-ring-blue{stroke:#0A84FF}.cxm-ring-orange{stroke:#FF9F0A}.cxm-ring-red{stroke:#FF453A}.cxm-card:first-child{margin-top:8px}.cxm-card:not(:first-child){margin-left:-100%;margin-top:57px}.cxm-balance-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-balance-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);display:inline-flex;align-items:center;gap:4px}.cxm-balance-right{flex:none;display:inline-flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums}.cxm-balance-value{font-size:12px;line-height:16px;font-weight:600;color:var(--dsw-alias-label-primary);transition:color .25s ease}.cxm-balance-value.cxm-hit{color:#FF453A}.cxm-today{font-size:11px;line-height:16px;color:var(--dsw-alias-label-secondary)}.cxm-dmg{position:absolute;right:12px;top:4px;z-index:5;pointer-events:none;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;color:#FF453A;animation:cxm-dmg-rise 1.1s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-rise{0%{opacity:0;transform:translateY(2px) scale(.9)}18%{opacity:1}100%{opacity:0;transform:translateY(-20px) scale(1)}}.cxm-dmg-crit{font-size:16px;font-weight:700;color:#FF453A;text-shadow:0 1px 8px rgba(255,69,58,.55);animation:cxm-dmg-crit-rise 1.4s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-crit-rise{0%{opacity:0;transform:translateY(4px) scale(.7) rotate(-2deg)}16%{opacity:1;transform:scale(1.14)}32%{transform:scale(1)}100%{opacity:0;transform:translateY(-30px) scale(1)}}";
+		const contextMeterCss = ".cxm-root{box-sizing:border-box;position:relative;flex:none;width:100%;min-width:0;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Text\",\"Segoe UI\",system-ui,sans-serif;letter-spacing:-.01em}.cxm-card{width:100%;margin:0;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-layer-2);background:color-mix(in srgb,var(--dsw-alias-bg-layer-1) 58%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 60%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 1px 2px rgba(0,0,0,.05),0 6px 20px -8px rgba(0,0,0,.12);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);display:flex;flex-direction:column;gap:7px;animation:cxm-in .3s cubic-bezier(.22,1,.36,1);transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s cubic-bezier(.22,1,.36,1)}.cxm-card:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 2px 4px rgba(0,0,0,.06),0 10px 28px -8px rgba(0,0,0,.16)}@keyframes cxm-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}.cxm-rail{margin-top:0;padding:0;display:grid;place-items:center;width:36px;height:36px;border-radius:50%}.cxm-rail:hover{background:var(--dsw-alias-interactive-bg-hover)}.cxm-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cxm-pct{flex:none;font-size:12px;line-height:16px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--dsw-alias-label-primary)}.cxm-pct-blue{color:#0A84FF}.cxm-pct-orange{color:#FF9F0A}.cxm-pct-red{color:#FF453A}.cxm-pct-green{color:#30D158}.cxm-track{flex:none;height:4px;border-radius:999px;background:var(--dsw-alias-interactive-bg-hover);background:color-mix(in srgb,var(--dsw-alias-label-primary) 8%,transparent);overflow:hidden;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}.cxm-fill{height:100%;border-radius:999px;transition:width .3s cubic-bezier(.22,1,.36,1)}.cxm-fill-blue{background-color:#0A84FF}.cxm-fill-orange{background-color:#FF9F0A}.cxm-fill-red{background-color:#FF453A}.cxm-fill-green{background-color:#30D158}.cxm-fill-blue,.cxm-fill-orange,.cxm-fill-red,.cxm-fill-green{background-image:linear-gradient(180deg,rgba(255,255,255,.32),rgba(255,255,255,0) 55%)}.cxm-tip{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px) scale(.98);z-index:60;box-sizing:border-box;width:236px;padding:10px 12px;border-radius:14px;background:var(--dsw-alias-bg-overlay);background:color-mix(in srgb,var(--dsw-alias-bg-overlay) 78%,transparent);border:1px solid var(--dsw-alias-border-l1);border:1px solid color-mix(in srgb,var(--dsw-alias-border-l1) 65%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 1px 2px rgba(0,0,0,.06),0 12px 32px -8px rgba(0,0,0,.22);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1),visibility 0s linear .16s}.cxm-card:hover>.cxm-tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0) scale(1);transition:opacity .16s cubic-bezier(.22,1,.36,1),transform .16s cubic-bezier(.22,1,.36,1)}.cxm-tip-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:3px 0;font-size:12px;line-height:17px}.cxm-tip-key{flex:none;color:var(--dsw-alias-label-secondary)}.cxm-tip-val{min-width:0;color:var(--dsw-alias-label-primary);font-variant-numeric:tabular-nums;text-align:right}.cxm-ring-track{fill:none;stroke:var(--dsw-alias-border-l1);stroke:color-mix(in srgb,var(--dsw-alias-label-primary) 12%,transparent);stroke-width:2.5}.cxm-ring-fill{fill:none;stroke-width:2.5;stroke-linecap:round}.cxm-ring-blue{stroke:#0A84FF}.cxm-ring-orange{stroke:#FF9F0A}.cxm-ring-red{stroke:#FF453A}.cxm-card:first-child{margin-top:8px}.cxm-card:not(:first-child){margin-left:-100%;margin-top:57px}.cxm-balance-row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}.cxm-balance-label{font-size:12px;line-height:16px;color:var(--dsw-alias-label-secondary);display:inline-flex;align-items:center;gap:4px}.cxm-balance-right{flex:none;display:inline-flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums}.cxm-balance-value{font-size:12px;line-height:16px;font-weight:600;color:var(--dsw-alias-label-primary);transition:color .25s ease}.cxm-balance-value.cxm-hit{color:#FF453A}.cxm-today{font-size:11px;line-height:16px;color:var(--dsw-alias-label-secondary)}.cxm-dmg{position:absolute;right:12px;top:4px;z-index:5;pointer-events:none;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;color:#FF453A;animation:cxm-dmg-rise 1.1s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-rise{0%{opacity:0;transform:translateY(2px) scale(.9)}18%{opacity:1}100%{opacity:0;transform:translateY(-20px) scale(1)}}.cxm-dmg-crit{font-size:16px;font-weight:700;color:#FF453A;text-shadow:0 1px 8px rgba(255,69,58,.55);animation:cxm-dmg-crit-rise 1.4s cubic-bezier(.22,1,.36,1) forwards}@keyframes cxm-dmg-crit-rise{0%{opacity:0;transform:translateY(4px) scale(.7) rotate(-2deg)}16%{opacity:1;transform:scale(1.14)}32%{transform:scale(1)}100%{opacity:0;transform:translateY(-30px) scale(1)}}.cxm-combo{flex:none;font-size:11px;line-height:16px;font-weight:600;color:#FF9F0A;animation:cxm-combo-pop .3s cubic-bezier(.22,1,.36,1)}@keyframes cxm-combo-pop{0%{transform:scale(.7);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1)}}.cxm-rank{flex:none;font-size:11px;line-height:16px;font-weight:500}";
 		const contextMeterTagId = "dsh-context-console/ContextMeter.module.css";
 		if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(contextMeterTagId) + "]") === null) {
 			const tag = document.createElement("style");
@@ -51,7 +51,9 @@ window.__ModuleLoader__.load({
 			"hit": "cxm-hit",
 			"today": "cxm-today",
 			"dmg": "cxm-dmg",
-			"dmgCrit": "cxm-dmg-crit"
+			"dmgCrit": "cxm-dmg-crit",
+			"combo": "cxm-combo",
+			"rank": "cxm-rank"
 		};
 		//#endregion
 		//#region \0dsh-css:/home/runner/work/deepseek-harness/deepseek-harness/packages/client/ui-sidebar/src/client/ContextIsland.module.css.mjs
@@ -167,6 +169,23 @@ window.__ModuleLoader__.load({
 			const outputYuan = output * 8 / 1e6;
 			return { miss: missYuan, hit: hitYuan, output: outputYuan, total: missYuan + hitYuan + outputYuan };
 		}
+		/** Spend ranks: all-time cumulative estimate unlocks a title, from
+		* freeloader to full-blown money burner. */
+		const SPEND_RANKS = [
+			{ threshold: 0, key: "meter.rank0", color: "#8A9A8A" },
+			{ threshold: 0.1, key: "meter.rank1", color: "#30D158" },
+			{ threshold: 1, key: "meter.rank2", color: "#2DD4BF" },
+			{ threshold: 5, key: "meter.rank3", color: "#0A84FF" },
+			{ threshold: 20, key: "meter.rank4", color: "#FF9F0A" },
+			{ threshold: 50, key: "meter.rank5", color: "#B07EF5" },
+			{ threshold: 100, key: "meter.rank6", color: "#FF453A" },
+			{ threshold: 500, key: "meter.rank7", color: "#D9A441" }
+		];
+		function rankOf(total) {
+			let rank = null;
+			for (const candidate of SPEND_RANKS) if (total >= candidate.threshold) rank = candidate;
+			return rank;
+		}
 		/** Local persistence for the HUD: last known balance and today's spend. */
 		const BALANCE_STORE_KEY = "dsh-context-console.balance-state";
 		function todayKey() {
@@ -183,10 +202,13 @@ window.__ModuleLoader__.load({
 				return {
 					balance: typeof parsed.balance === "string" ? parsed.balance : null,
 					parts: parts !== null && typeof parts === "object" ? { miss: num(parts.miss), hit: num(parts.hit), output: num(parts.output) } : { miss: 0, hit: 0, output: 0 },
+					combo: num(parsed.combo),
+					best: num(parsed.best),
+					total: num(parsed.total),
 					date: typeof parsed.date === "string" ? parsed.date : ""
 				};
 			} catch (error) {
-				return { balance: null, parts: { miss: 0, hit: 0, output: 0 }, date: "" };
+				return { balance: null, parts: { miss: 0, hit: 0, output: 0 }, combo: 0, best: 0, total: 0, date: "" };
 			}
 		}
 		/** Read one projection leaf off the current session's list row. */
@@ -208,7 +230,11 @@ window.__ModuleLoader__.load({
 			const [hitFlash, setHitFlash] = (0, react.useState)(false);
 			const [dmgList, setDmgList] = (0, react.useState)([]);
 			const [todayParts, setTodayParts] = (0, react.useState)(initialBalance.date === todayKey() ? initialBalance.parts : { miss: 0, hit: 0, output: 0 });
+			const [combo, setCombo] = (0, react.useState)(initialBalance.date === todayKey() ? initialBalance.combo : 0);
+			const [bestCombo, setBestCombo] = (0, react.useState)(initialBalance.best);
+			const [totalSpend, setTotalSpend] = (0, react.useState)(initialBalance.total);
 			const todayCost = todayParts.miss + todayParts.hit + todayParts.output;
+			const rank = rankOf(totalSpend);
 			const prevUsageRef = (0, react.useRef)(void 0);
 			const dmgSeqRef = (0, react.useRef)(0);
 			/** Balance polling: the host half serves /console-api/balance from the
@@ -235,11 +261,12 @@ window.__ModuleLoader__.load({
 			/** Persist last balance + today's spend across reloads (daily reset). */
 			(0, react.useEffect)(() => {
 				try {
-					localStorage.setItem(BALANCE_STORE_KEY, JSON.stringify({ balance: balanceText, parts: todayParts, date: todayKey() }));
+					localStorage.setItem(BALANCE_STORE_KEY, JSON.stringify({ balance: balanceText, parts: todayParts, combo, best: bestCombo, total: totalSpend, date: todayKey() }));
 				} catch (error) {}
-			}, [balanceText, todayParts]);
+			}, [balanceText, todayParts, combo, bestCombo, totalSpend]);
 			/** Cost detection: each usage delta over ¥0.001 fires the hit effect;
-			* a delta whose uncached/write share is ≥40% fires the crit variant. */
+			* a delta whose uncached/write share is ≥40% fires the crit variant;
+			* input cache-hit rate ≥80% extends the combo, anything lower breaks it. */
 			(0, react.useEffect)(() => {
 				if (usage === void 0) return;
 				const prev = prevUsageRef.current;
@@ -247,7 +274,19 @@ window.__ModuleLoader__.load({
 				const cost = costOfDelta(usage, prev);
 				if (cost.total < 0.001) return;
 				const crit = critFx && cost.total > 0 && cost.miss / cost.total >= 0.4;
+				const inputYuan = cost.miss + cost.hit;
+				const hitShare = inputYuan > 0 ? cost.hit / inputYuan : -1;
 				setTodayParts((parts) => ({ miss: parts.miss + cost.miss, hit: parts.hit + cost.hit, output: parts.output + cost.output }));
+				setTotalSpend((sum) => sum + cost.total);
+				if (hitShare >= 0.8) {
+					setCombo((n) => {
+						const next = n + 1;
+						setBestCombo((best) => Math.max(best, next));
+						return next;
+					});
+				} else if (hitShare >= 0) {
+					setCombo(0);
+				}
 				setHitFlash(true);
 				const id = dmgSeqRef.current++;
 				setDmgList((list) => list.concat({ id, text: (crit ? t("meter.crit") + " " : "") + "-" + formatYuan(cost.total, 4), crit }));
@@ -274,6 +313,8 @@ window.__ModuleLoader__.load({
 				tipRows.push({ key: t("meter.todayHit"), value: "-" + formatYuan(todayParts.hit, 4) });
 				tipRows.push({ key: t("meter.todayOutput"), value: "-" + formatYuan(todayParts.output, 4) });
 			}
+			if (totalSpend > 0) tipRows.push({ key: t("meter.total"), value: formatYuan(totalSpend, 2) + (rank !== null ? " · " + t(rank.key) : "") });
+			if (bestCombo > 0) tipRows.push({ key: t("meter.bestCombo"), value: "×" + bestCombo });
 			tipRows.push({
 				key: t("meter.tipContext"),
 				value: occ === null ? t("meter.tipNoData") : "~" + formatTokens(occ.used) + " / " + formatTokens(occ.window) + " · " + occ.percent + "%"
@@ -292,13 +333,21 @@ window.__ModuleLoader__.load({
 						className: ContextMeter_module_css_default.balanceRow,
 						children: [(0, react_jsx_runtime.jsxs)("span", {
 							className: ContextMeter_module_css_default.balanceLabel,
-							children: t("meter.balance")
+							children: [t("meter.balance"), combo >= 2 ? (0, react_jsx_runtime.jsx)("span", {
+								className: ContextMeter_module_css_default.combo,
+								key: combo,
+								children: t("meter.combo", { n: combo })
+							}) : null]
 						}), (0, react_jsx_runtime.jsxs)("span", {
 							className: ContextMeter_module_css_default.balanceRight,
 							children: [(0, react_jsx_runtime.jsx)("span", {
 								className: ContextMeter_module_css_default.balanceValue + (hitFlash ? " " + ContextMeter_module_css_default.hit : ""),
 								children: balanceText === null ? "" : (balanceFresh ? "" : t("meter.last") + " ") + balanceText
-							}), todayCost > 0 ? (0, react_jsx_runtime.jsx)("span", {
+							}), rank !== null ? (0, react_jsx_runtime.jsx)("span", {
+								className: ContextMeter_module_css_default.rank,
+								style: { color: rank.color },
+								children: t(rank.key)
+							}) : null, todayCost > 0 ? (0, react_jsx_runtime.jsx)("span", {
 								className: ContextMeter_module_css_default.today,
 								children: t("meter.today") + " -" + formatYuan(todayCost, 4)
 							}) : null]
@@ -761,6 +810,17 @@ window.__ModuleLoader__.load({
 			"meter.todayMiss": "未命中",
 			"meter.todayHit": "命中",
 			"meter.todayOutput": "生成",
+			"meter.combo": "连击 ×{n}",
+			"meter.bestCombo": "最高连击",
+			"meter.total": "累计",
+			"meter.rank0": "白嫖党",
+			"meter.rank1": "小试牛刀",
+			"meter.rank2": "渐入佳境",
+			"meter.rank3": "氪金学徒",
+			"meter.rank4": "挥金如土",
+			"meter.rank5": "散财童子",
+			"meter.rank6": "烧钱大师",
+			"meter.rank7": "财神下凡",
 			"island.done": "任务完成",
 			"island.approval": "需要审批",
 			"island.job": "后台任务完成",
@@ -803,6 +863,17 @@ window.__ModuleLoader__.load({
 			"meter.todayMiss": "Miss",
 			"meter.todayHit": "Hit",
 			"meter.todayOutput": "Output",
+			"meter.combo": "Combo ×{n}",
+			"meter.bestCombo": "Best combo",
+			"meter.total": "Total",
+			"meter.rank0": "Freeloader",
+			"meter.rank1": "Warming Up",
+			"meter.rank2": "Getting Hooked",
+			"meter.rank3": "Apprentice Spender",
+			"meter.rank4": "Big Spender",
+			"meter.rank5": "Money Scatterer",
+			"meter.rank6": "Cash Burner",
+			"meter.rank7": "God of Fortune",
 			"island.done": "Task complete",
 			"island.approval": "Needs approval",
 			"island.job": "Background job finished",
